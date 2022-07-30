@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "variant_bookshelves:block/birch_bookshelf"
+    }
+  }
+}
