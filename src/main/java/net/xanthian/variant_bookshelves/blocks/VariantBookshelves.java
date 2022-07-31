@@ -2,11 +2,13 @@ package net.xanthian.variant_bookshelves.blocks;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
+
 import net.xanthian.variant_bookshelves.Init;
 
 public class VariantBookshelves {

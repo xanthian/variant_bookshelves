@@ -1,4 +1,4 @@
-package net.xanthian.variant_bookshelves.dynagen;
+package net.xanthian.variant_bookshelves.recipes;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;

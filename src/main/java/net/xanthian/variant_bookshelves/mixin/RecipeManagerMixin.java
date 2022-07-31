@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.profiler.Profiler;
 
 import net.xanthian.variant_bookshelves.Init;
-import net.xanthian.variant_bookshelves.dynagen.Recipes;
+import net.xanthian.variant_bookshelves.recipes.Recipes;
 
 import org.apache.commons.lang3.tuple.Pair;
 

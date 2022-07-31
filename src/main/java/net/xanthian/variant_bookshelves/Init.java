@@ -1,18 +1,22 @@
 package net.xanthian.variant_bookshelves;
 
 import com.google.common.collect.Lists;
+
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.loader.api.FabricLoader;
+
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
+
 import net.xanthian.variant_bookshelves.blocks.VariantBookshelves;
+
 import org.apache.commons.lang3.tuple.Pair;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Init implements ModInitializer {
