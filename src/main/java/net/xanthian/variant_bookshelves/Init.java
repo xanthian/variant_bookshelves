@@ -35,7 +35,6 @@ public class Init implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        if (!FabricLoader.getInstance().isModLoaded("blockus")) {
             woodTypes.add(Pair.of("acacia", new String[0]));
             woodTypes.add(Pair.of("birch", new String[0]));
             woodTypes.add(Pair.of("dark_oak", new String[0]));
@@ -45,7 +44,5 @@ public class Init implements ModInitializer {
             woodTypes.add(Pair.of("crimson", new String[0]));
             woodTypes.add(Pair.of("warped", new String[0]));
             VariantBookshelves.registerBookshelf();
-        }
     }
 }
-

@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "variant_bookshelves:block/acacia_bookshelf",
-    "variant_bookshelves:block/birch_bookshelf",
-    "variant_bookshelves:block/crimson_bookshelf",
-    "variant_bookshelves:block/dark_oak_bookshelf",
-    "variant_bookshelves:block/jungle_bookshelf",
-    "variant_bookshelves:block/mangrove_bookshelf",
-    "variant_bookshelves:block/spruce_bookshelf",
-    "variant_bookshelves:block/warped_bookshelf"
-    ]
+    {"id":"variant_bookshelves:block/acacia_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/birch_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/crimson_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/dark_oak_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/jungle_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/mangrove_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/spruce_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/warped_bookshelf", "required": false}
+  ]
 }
