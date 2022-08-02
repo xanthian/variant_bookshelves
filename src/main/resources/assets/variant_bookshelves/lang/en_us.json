@@ -2,14 +2,20 @@
   "itemGroup.variant_bookshelves.variant_bookshelves" : "Variant Bookshelves",
 
   "_vanilla": "Vanilla Bookshelves",
-  "block.variant_bookshelves.block.acacia_bookshelf": "Acacia Bookshelf",
+  "block.minecraft.bookshelf": "Oak Bookshelf",
+    "block.variant_bookshelves.block.acacia_bookshelf": "Acacia Bookshelf",
   "block.variant_bookshelves.block.birch_bookshelf": "Birch Bookshelf",
-  "block.variant_bookshelves.block.crimson_bookshelf": "Crimson Bookshelf",
   "block.variant_bookshelves.block.dark_oak_bookshelf": "Dark Oak Bookshelf",
   "block.variant_bookshelves.block.jungle_bookshelf": "Jungle Bookshelf",
-  "block.minecraft.bookshelf": "Oak Bookshelf",
   "block.variant_bookshelves.block.mangrove_bookshelf": "Mangrove Bookshelf",
   "block.variant_bookshelves.block.spruce_bookshelf": "Spruce Bookshelf",
-  "block.variant_bookshelves.block.warped_bookshelf": "Warped Bookshelf"
+  "block.variant_bookshelves.block.crimson_bookshelf": "Crimson Bookshelf",
+  "block.variant_bookshelves.block.warped_bookshelf": "Warped Bookshelf",
 
+  "block.variant_bookshelves.block.rubber_bookshelf": "Rubber Bookshelf",
+
+  "block.variant_bookshelves.block.azalea_bookshelf": "Azalea Bookshelf",
+  "block.variant_bookshelves.block.coconut_bookshelf": "Coconut Bookshelf",
+  "block.variant_bookshelves.block.flowering_azalea_bookshelf": "Flowering Azalea Bookshelf",
+  "block.variant_bookshelves.block.walnut_bookshelf": "Walnut Bookshelf"
 }

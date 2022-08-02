@@ -3,11 +3,16 @@
   "values": [
     {"id":"variant_bookshelves:block/acacia_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/birch_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/crimson_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/dark_oak_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/jungle_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/mangrove_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/spruce_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/warped_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/crimson_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/warped_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/rubber_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/azalea_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/coconut_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/flowering_azalea_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/walnut_bookshelf", "required": false}
   ]
 }

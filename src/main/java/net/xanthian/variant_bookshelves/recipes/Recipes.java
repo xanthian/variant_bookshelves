@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-import static net.xanthian.variant_bookshelves.Init.*;
+import static net.xanthian.variant_bookshelves.Initialise.*;
 
 public class Recipes {
 

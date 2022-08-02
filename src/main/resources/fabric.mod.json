@@ -15,7 +15,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.xanthian.variant_bookshelves.Init"
+      "net.xanthian.variant_bookshelves.Initialise"
     ]
   },
   "mixins": [

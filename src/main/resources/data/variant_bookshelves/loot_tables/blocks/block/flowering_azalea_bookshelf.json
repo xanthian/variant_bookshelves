@@ -1,16 +1,10 @@
 {
-  "fabric:load_conditions":
-  [
+  "fabric:load_conditions": [
     {
-      "condition": "fabric:not",
-      "value":
-      {
-        "condition": "fabric:all_mods_loaded",
-        "values":
-        [
-          "betternether"
-        ]
-      }
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ecologics"
+      ]
     }
   ],
   "type": "minecraft:block",
@@ -38,7 +32,7 @@
                   }
                 }
               ],
-              "name": "variant_bookshelves:block/crimson_bookshelf"
+              "name": "variant_bookshelves:block/flowering_azalea_bookshelf"
             },
             {
               "type": "minecraft:item",
