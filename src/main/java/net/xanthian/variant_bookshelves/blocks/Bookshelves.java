@@ -55,6 +55,12 @@ public class Bookshelves {
         registerBookshelfBlock("block/walnut_bookshelf", WALNUT_BOOKSHELF, true);
     }
 
+    // Croptopia
+    public static void registerCroptopiaBookshelves() {
+        final Block CINNAMON_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+        registerBookshelfBlock("block/cinnamon_bookshelf", CINNAMON_BOOKSHELF, true);
+    }
+
     private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
         Registry.register(Registry.BLOCK, identifier, block);
