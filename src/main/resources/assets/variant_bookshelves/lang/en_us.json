@@ -18,5 +18,9 @@
   "block.variant_bookshelves.block.coconut_bookshelf": "Coconut Bookshelf",
   "block.variant_bookshelves.block.flowering_azalea_bookshelf": "Flowering Azalea Bookshelf",
   "block.variant_bookshelves.block.walnut_bookshelf": "Walnut Bookshelf",
-  "block.variant_bookshelves.block.cinnamon_bookshelf": "Cinnamon Bookshelf"
+  "block.variant_bookshelves.block.cinnamon_bookshelf": "Cinnamon Bookshelf",
+
+  "block.variant_bookshelves.block.jade_bookshelf": "Jade Bookshelf",
+  "block.variant_bookshelves.block.moon_bookshelf": "Moon Bookshelf",
+  "block.variant_bookshelves.block.shadow_bookshelf": "Shadow Bookshelf"
 }

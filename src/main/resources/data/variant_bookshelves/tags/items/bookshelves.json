@@ -14,6 +14,9 @@
     {"id":"variant_bookshelves:block/coconut_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/flowering_azalea_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/walnut_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/cinnamon_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/cinnamon_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/jade_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/moon_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/shadow_bookshelf", "required": false}
   ]
 }

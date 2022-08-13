@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "arclight:block/moon_planks",
+    "side": "variant_bookshelves:block/moon_bookshelf"
+  }
+}

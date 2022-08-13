@@ -61,6 +61,16 @@ public class Bookshelves {
         registerBookshelfBlock("block/cinnamon_bookshelf", CINNAMON_BOOKSHELF, true);
     }
 
+    // Epic Paladins (arclight)
+    public static void registerArclightBookshelves() {
+        final Block JADE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+        registerBookshelfBlock("block/jade_bookshelf", JADE_BOOKSHELF, true);
+        final Block MOON_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+        registerBookshelfBlock("block/moon_bookshelf", MOON_BOOKSHELF, true);
+        final Block SHADOW_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+        registerBookshelfBlock("block/shadow_bookshelf", SHADOW_BOOKSHELF, true);
+    }
+
     private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
         Registry.register(Registry.BLOCK, identifier, block);
