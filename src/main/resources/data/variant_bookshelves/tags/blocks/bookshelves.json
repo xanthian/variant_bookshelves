@@ -17,6 +17,7 @@
     {"id":"variant_bookshelves:block/cinnamon_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/jade_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/moon_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/shadow_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/shadow_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/mango_bookshelf", "required": false}
   ]
 }

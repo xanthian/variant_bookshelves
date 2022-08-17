@@ -1,4 +1,4 @@
-package net.xanthian.variant_bookshelves.recipes;
+package net.xanthian.variant_bookshelves.util;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;

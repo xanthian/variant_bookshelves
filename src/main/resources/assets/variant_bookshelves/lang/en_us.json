@@ -22,5 +22,8 @@
 
   "block.variant_bookshelves.block.jade_bookshelf": "Jade Birch Bookshelf",
   "block.variant_bookshelves.block.moon_bookshelf": "Moon Bookshelf",
-  "block.variant_bookshelves.block.shadow_bookshelf": "Shadow Bookshelf"
+  "block.variant_bookshelves.block.shadow_bookshelf": "Shadow Bookshelf",
+
+  "block.variant_bookshelves.block.mango_bookshelf": "Mango Bookshelf"
+
 }

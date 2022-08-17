@@ -73,5 +73,9 @@ public class Initialise implements ModInitializer {
             woodTypes.add(Pair.of("shadow", new String[]{"arclight"}));
             Bookshelves.registerArclightBookshelves();
         }
+        if (FabricLoader.getInstance().isModLoaded("simplemango")) {
+            woodTypes.add(Pair.of("mango", new String[]{"simplemango"}));
+            Bookshelves.registerSimpleMangoBookshelves();
+        }
     }
 }

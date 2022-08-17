@@ -4,24 +4,15 @@
   "version": "${version}",
 
   "name": "Variant Bookshelves",
-  "description": "Bookshelves for all wood variants",
-  "authors": [
-    "Xanthian"
-  ],
-
-  "license": "CC0-1.0",
-  "icon": "assets/variant_bookshelves/icon.png",
-
+  "description": "Bookshelves for all wood types",
+  "authors": [ "Xanthian"],
+  "license": "MIT",
+  "icon": "assets/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.xanthian.variant_bookshelves.Initialise"
-    ]
+    "main": ["net.xanthian.variant_bookshelves.Initialise"]
   },
-  "mixins": [
-    "variant_bookshelves.mixins.json"
-  ],
-
+  "mixins": ["variant_bookshelves.mixins.json"],
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
