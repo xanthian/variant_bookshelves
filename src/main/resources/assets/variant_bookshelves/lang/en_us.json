@@ -24,6 +24,9 @@
   "block.variant_bookshelves.block.moon_bookshelf": "Moon Bookshelf",
   "block.variant_bookshelves.block.shadow_bookshelf": "Shadow Bookshelf",
 
-  "block.variant_bookshelves.block.mango_bookshelf": "Mango Bookshelf"
+  "block.variant_bookshelves.block.mango_bookshelf": "Mango Bookshelf",
+
+  "block.variant_bookshelves.block.fir_bookshelf": "Fir Bookshelf"
+
 
 }

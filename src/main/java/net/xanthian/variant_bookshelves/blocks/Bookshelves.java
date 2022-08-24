@@ -34,13 +34,11 @@ public class Bookshelves {
         VariantBookshelfBlock WARPED_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/warped_bookshelf", WARPED_BOOKSHELF, false);
     }
-
     // Tech Reborn
     public static void registerTRBookshelves() {
         VariantBookshelfBlock RUBBER_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/rubber_bookshelf", RUBBER_BOOKSHELF, true);
     }
-
     // Ecologics
     public static void registerEcologicsBookshelves() {
         VariantBookshelfBlock AZALEA_BOOKSHELF = new VariantBookshelfBlock();
@@ -52,13 +50,11 @@ public class Bookshelves {
         VariantBookshelfBlock WALNUT_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/walnut_bookshelf", WALNUT_BOOKSHELF, true);
     }
-
     // Croptopia
     public static void registerCroptopiaBookshelves() {
         VariantBookshelfBlock CINNAMON_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/cinnamon_bookshelf", CINNAMON_BOOKSHELF, true);
     }
-
     // Epic Paladins (arclight)
     public static void registerArclightBookshelves() {
         VariantBookshelfBlock JADE_BOOKSHELF = new VariantBookshelfBlock();
@@ -68,14 +64,17 @@ public class Bookshelves {
         VariantBookshelfBlock SHADOW_BOOKSHELF = new VariantBookshelfBlock(); 
         registerBookshelfBlock("block/shadow_bookshelf", SHADOW_BOOKSHELF, true);
     }
-
     // Simple Mango
     public static void registerSimpleMangoBookshelves() {
         VariantBookshelfBlock MANGO_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/mango_bookshelf", MANGO_BOOKSHELF, true);
-
     }
-    // To-do : Updated Blockus,Promenade, Bewitchment, Biome Makeover, Simple Mango, Enriched, Twigs, Wilder World
+    public static void registerTraverseBookshelves() {
+        VariantBookshelfBlock FIR_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/fir_bookshelf", FIR_BOOKSHELF, true);
+    }
+
+    // To-do : Updated Blockus,Promenade, Bewitchment, Biome Makeover,  Enriched, Twigs, Wilder World
     // Not yet updated : Botania, Spectrum, Paradise Lost
 
     private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {

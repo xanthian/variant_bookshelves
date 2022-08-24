@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "traverse:block/fir_planks",
+    "side": "variant_bookshelves:block/fir_bookshelf"
+  }
+}

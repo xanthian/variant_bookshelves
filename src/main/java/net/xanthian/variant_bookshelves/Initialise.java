@@ -36,13 +36,13 @@ public class Initialise implements ModInitializer {
     @Override
     public void onInitialize() {
 
-            Bookshelves.registerVanillaBookshelves();
-            woodTypes.add(Pair.of("acacia", new String[0]));
-            woodTypes.add(Pair.of("birch", new String[0]));
-            woodTypes.add(Pair.of("dark_oak", new String[0]));
-            woodTypes.add(Pair.of("jungle", new String[0]));
-            woodTypes.add(Pair.of("mangrove", new String[0]));
-            woodTypes.add(Pair.of("spruce", new String[0]));
+        Bookshelves.registerVanillaBookshelves();
+        woodTypes.add(Pair.of("acacia", new String[0]));
+        woodTypes.add(Pair.of("birch", new String[0]));
+        woodTypes.add(Pair.of("dark_oak", new String[0]));
+        woodTypes.add(Pair.of("jungle", new String[0]));
+        woodTypes.add(Pair.of("mangrove", new String[0]));
+        woodTypes.add(Pair.of("spruce", new String[0]));
 
         if (!FabricLoader.getInstance().isModLoaded("betternether")) {
             Bookshelves.registerNetherBookshelves();
@@ -76,6 +76,10 @@ public class Initialise implements ModInitializer {
         if (FabricLoader.getInstance().isModLoaded("simplemango")) {
             woodTypes.add(Pair.of("mango", new String[]{"simplemango"}));
             Bookshelves.registerSimpleMangoBookshelves();
+        }
+        if (FabricLoader.getInstance().isModLoaded("traverse")) {
+            woodTypes.add(Pair.of("fir", new String[]{"traverse"}));
+            Bookshelves.registerTraverseBookshelves();
         }
     }
 }
