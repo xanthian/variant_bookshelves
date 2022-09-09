@@ -26,7 +26,15 @@
 
   "block.variant_bookshelves.block.mango_bookshelf": "Mango Bookshelf",
 
-  "block.variant_bookshelves.block.fir_bookshelf": "Fir Bookshelf"
+  "block.variant_bookshelves.block.fir_bookshelf": "Fir Bookshelf",
 
-
+  "block.variant_bookshelves.block.cypress_bookshelf": "Cypress Bookshelf",
+  "block.variant_bookshelves.block.hemlock_bookshelf": "Hemlock Bookshelf",
+  "block.variant_bookshelves.block.japanese_maple_bookshelf": "Japanese Maple Bookshelf",
+  "block.variant_bookshelves.block.rainbow_eucalyptus_bookshelf": "Rainbow Eucalyptus Bookshelf",
+  "block.variant_bookshelves.block.redwood_bookshelf": "Redwood Bookshelf",
+  "block.variant_bookshelves.block.rubber_bookshelf2": "Rubber Bookshelf",
+  "block.variant_bookshelves.block.sakura_bookshelf": "Sakura Bookshelf",
+  "block.variant_bookshelves.block.willow_bookshelf": "Willow Bookshelf",
+  "block.variant_bookshelves.block.yucca_palm_bookshelf": "Yucca Palm Bookshelf"
 }

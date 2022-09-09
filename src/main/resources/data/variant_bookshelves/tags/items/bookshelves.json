@@ -19,6 +19,15 @@
     {"id":"variant_bookshelves:block/moon_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/shadow_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/mango_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/fir_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/fir_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/cypress_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/hemlock_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/japanese_maple_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/rainbow_eucalyptus_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/redwood_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/rubber_bookshelf2", "required": false},
+    {"id":"variant_bookshelves:block/sakura_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/willow_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/yucca_palm_bookshelf", "required": false}
   ]
 }

@@ -69,9 +69,31 @@ public class Bookshelves {
         VariantBookshelfBlock MANGO_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/mango_bookshelf", MANGO_BOOKSHELF, true);
     }
+    // Traverse
     public static void registerTraverseBookshelves() {
         VariantBookshelfBlock FIR_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/fir_bookshelf", FIR_BOOKSHELF, true);
+    }
+    // Terrestria
+    public static void registerTerrestriaBookshelves() {
+        VariantBookshelfBlock CYPRESS_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/cypress_bookshelf", CYPRESS_BOOKSHELF, true);
+        VariantBookshelfBlock HEMLOCK_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/hemlock_bookshelf", HEMLOCK_BOOKSHELF, true);
+        VariantBookshelfBlock JAPANESE_MAPLE_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/japanese_maple_bookshelf", JAPANESE_MAPLE_BOOKSHELF, true);
+        VariantBookshelfBlock RAINBOW_EUCALYPTUS_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/rainbow_eucalyptus_bookshelf", RAINBOW_EUCALYPTUS_BOOKSHELF, true);
+        VariantBookshelfBlock REDWOOD_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/redwood_bookshelf", REDWOOD_BOOKSHELF, true);
+        VariantBookshelfBlock RUBBER_BOOKSHELF2 = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/rubber_bookshelf2", RUBBER_BOOKSHELF2, true);
+        VariantBookshelfBlock SAKURA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/sakura_bookshelf", SAKURA_BOOKSHELF, true);
+        VariantBookshelfBlock WILLOW_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/willow_bookshelf", WILLOW_BOOKSHELF, true);
+        VariantBookshelfBlock YUCCA_PALM_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/yucca_palm_bookshelf", YUCCA_PALM_BOOKSHELF, true);
     }
 
     // To-do : Updated Blockus,Promenade, Bewitchment, Biome Makeover,  Enriched, Twigs, Wilder World
