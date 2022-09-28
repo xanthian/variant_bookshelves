@@ -28,6 +28,8 @@
     {"id":"variant_bookshelves:block/rubber_bookshelf2", "required": false},
     {"id":"variant_bookshelves:block/sakura_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/willow_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/yucca_palm_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/yucca_palm_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/scorched_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/umbral_bookshelf", "required": false}
   ]
 }

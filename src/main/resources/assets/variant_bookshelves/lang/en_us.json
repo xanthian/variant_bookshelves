@@ -36,5 +36,8 @@
   "block.variant_bookshelves.block.rubber_bookshelf2": "Rubber Bookshelf",
   "block.variant_bookshelves.block.sakura_bookshelf": "Sakura Bookshelf",
   "block.variant_bookshelves.block.willow_bookshelf": "Willow Bookshelf",
-  "block.variant_bookshelves.block.yucca_palm_bookshelf": "Yucca Palm Bookshelf"
+  "block.variant_bookshelves.block.yucca_palm_bookshelf": "Yucca Palm Bookshelf",
+
+  "block.variant_bookshelves.block.scorched_bookshelf": "Scorched Bookshelf",
+  "block.variant_bookshelves.block.umbral_bookshelf": "Umbral Bookshelf"
 }

@@ -22,10 +22,12 @@ public class Bookshelves {
         registerBookshelfBlock("block/dark_oak_bookshelf", DARK_OAK_BOOKSHELF, true);
         VariantBookshelfBlock JUNGLE_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/jungle_bookshelf", JUNGLE_BOOKSHELF, true);
-        VariantBookshelfBlock MANGROVE_BOOKSHELF = new VariantBookshelfBlock();
-        registerBookshelfBlock("block/mangrove_bookshelf", MANGROVE_BOOKSHELF, true);
         VariantBookshelfBlock SPRUCE_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/spruce_bookshelf", SPRUCE_BOOKSHELF, true);
+    }
+    public static void registerVanilla119Bookshelf() {
+        VariantBookshelfBlock MANGROVE_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/mangrove_bookshelf", MANGROVE_BOOKSHELF, true);
     }
     // Nether
     public static void registerNetherBookshelves() {
@@ -95,6 +97,14 @@ public class Bookshelves {
         VariantBookshelfBlock YUCCA_PALM_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/yucca_palm_bookshelf", YUCCA_PALM_BOOKSHELF, true);
     }
+    // Cinderscapes
+    public static void registerCinderscapesBookshelves() {
+        VariantBookshelfBlock SCORCHED_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/scorched_bookshelf", SCORCHED_BOOKSHELF, true);
+        VariantBookshelfBlock UMBRAL_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/umbral_bookshelf", UMBRAL_BOOKSHELF, true);
+    }
+
 
     // To-do : Updated Blockus,Promenade, Bewitchment, Biome Makeover,  Enriched, Twigs, Wilder World
     // Not yet updated : Botania, Spectrum, Paradise Lost

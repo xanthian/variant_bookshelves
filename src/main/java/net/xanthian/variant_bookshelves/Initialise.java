@@ -6,6 +6,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 
+import net.minecraft.SharedConstants;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -41,20 +42,21 @@ public class Initialise implements ModInitializer {
         woodTypes.add(Pair.of("birch", new String[0]));
         woodTypes.add(Pair.of("dark_oak", new String[0]));
         woodTypes.add(Pair.of("jungle", new String[0]));
-        woodTypes.add(Pair.of("mangrove", new String[0]));
         woodTypes.add(Pair.of("spruce", new String[0]));
 
+        if (SharedConstants.getGameVersion().getName().startsWith("1.19")) {
+            woodTypes.add(Pair.of("mangrove", new String[0]));
+            Bookshelves.registerVanilla119Bookshelf();
+        }
         if (!FabricLoader.getInstance().isModLoaded("betternether")) {
             Bookshelves.registerNetherBookshelves();
             woodTypes.add(Pair.of("crimson", new String[0]));
             woodTypes.add(Pair.of("warped", new String[0]));
         }
-
         if (FabricLoader.getInstance().isModLoaded("techreborn")) {
             woodTypes.add(Pair.of("rubber", new String[]{"techreborn"}));
             Bookshelves.registerTRBookshelves();
         }
-
         if (FabricLoader.getInstance().isModLoaded("ecologics")) {
             woodTypes.add(Pair.of("azalea", new String[]{"ecologics"}));
             woodTypes.add(Pair.of("coconut", new String[]{"ecologics"}));
@@ -66,7 +68,6 @@ public class Initialise implements ModInitializer {
             woodTypes.add(Pair.of("cinnamon", new String[]{"croptopia"}));
             Bookshelves.registerCroptopiaBookshelves();
         }
-
         if (FabricLoader.getInstance().isModLoaded("arclight")) {
             woodTypes.add(Pair.of("jade", new String[]{"arclight"}));
             woodTypes.add(Pair.of("moon", new String[]{"arclight"}));
@@ -92,7 +93,11 @@ public class Initialise implements ModInitializer {
             woodTypes.add(Pair.of("willow", new String[]{"terrestria"}));
             woodTypes.add(Pair.of("yucca_palm", new String[]{"terrestria"}));
             Bookshelves.registerTerrestriaBookshelves();
-
+        }
+        if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
+            woodTypes.add(Pair.of("scorched", new String[]{"cinderscapes"}));
+            woodTypes.add(Pair.of("umbral", new String[]{"cinderscapes"}));
+            Bookshelves.registerCinderscapesBookshelves();
         }
     }
 }

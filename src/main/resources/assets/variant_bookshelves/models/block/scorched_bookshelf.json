@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cinderscapes:block/scorched_planks",
+    "side": "variant_bookshelves:block/scorched_bookshelf"
+  }
+}
