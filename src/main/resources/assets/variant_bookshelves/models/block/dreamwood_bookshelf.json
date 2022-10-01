@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "botania:block/dreamwood_planks",
+    "side": "variant_bookshelves:block/dreamwood_bookshelf"
+  }
+}

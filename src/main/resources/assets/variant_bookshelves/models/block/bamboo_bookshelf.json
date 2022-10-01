@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blockus:block/bamboo_planks",
+    "side": "variant_bookshelves:block/bamboo_bookshelf"
+  }
+}

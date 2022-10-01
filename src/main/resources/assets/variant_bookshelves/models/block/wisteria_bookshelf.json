@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wilderworld:block/wisteria_planks",
+    "side": "variant_bookshelves:block/wisteria_bookshelf"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blockus:block/charred_planks",
+    "side": "variant_bookshelves:block/charred_bookshelf"
+  }
+}

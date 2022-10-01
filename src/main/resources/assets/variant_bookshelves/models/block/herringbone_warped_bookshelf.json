@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blockus:block/herringbone_warped_planks",
+    "side": "variant_bookshelves:block/herringbone_warped_bookshelf"
+  }
+}

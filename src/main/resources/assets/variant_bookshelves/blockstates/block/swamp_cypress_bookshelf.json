@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "variant_bookshelves:block/swamp_cypress_bookshelf"
+    }
+  }
+}

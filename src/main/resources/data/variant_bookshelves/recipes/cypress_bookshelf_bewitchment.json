@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "bewitchment"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "BBB",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "bewitchment:cypress_planks"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "item": "variant_bookshelves:block/cypress_bookshelf2"
+  }
+}

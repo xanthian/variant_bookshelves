@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "enriched"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "BBB",
+    "PPP"
+  ],
+  "key": {
+    "P": {
+      "item": "enriched:bamboo_planks"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "item": "variant_bookshelves:block/bamboo_bookshelf2"
+  }
+}

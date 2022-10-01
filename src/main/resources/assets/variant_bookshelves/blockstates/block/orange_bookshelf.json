@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "variant_bookshelves:block/orange_bookshelf"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "variant_bookshelves:block/skyroot_bookshelf"
+    }
+  }
+}

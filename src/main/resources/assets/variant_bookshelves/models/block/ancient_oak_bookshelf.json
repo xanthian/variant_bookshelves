@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "biomemakeover:block/ancient_oak_planks",
+    "side": "variant_bookshelves:block/ancient_oak_bookshelf"
+  }
+}

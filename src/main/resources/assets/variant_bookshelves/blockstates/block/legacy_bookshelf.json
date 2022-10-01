@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "variant_bookshelves:block/legacy_bookshelf"
+    }
+  }
+}

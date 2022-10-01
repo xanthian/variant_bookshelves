@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "blockus:block/legacy_planks",
+    "side": "variant_bookshelves:block/legacy_bookshelf"
+  }
+}
