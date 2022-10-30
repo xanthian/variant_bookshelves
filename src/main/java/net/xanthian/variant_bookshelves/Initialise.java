@@ -21,10 +21,8 @@ import java.util.List;
 public class Initialise implements ModInitializer {
 
     public static final String MOD_ID = "variant_bookshelves";
-
     public static final ItemGroup VARIANT_BOOKSHELVES =
             FabricItemGroupBuilder.build(new Identifier(Initialise.MOD_ID, "variant_bookshelves"), () -> new ItemStack(Blocks.BOOKSHELF));
-
     public static List<Pair<String, String[]>> woodTypes = Lists.newArrayList();
 
     @Override
@@ -180,6 +178,16 @@ public class Initialise implements ModInitializer {
             woodTypes.add(Pair.of("skyroot", new String[]{"paradise_lost"}));
             //woodTypes.add(Pair.of("wisteria", new String[]{"paradise_lost"}));
             Bookshelves.registerParadiseLostBookshelves();
+        }
+        if(FabricLoader.getInstance().isModLoaded("colorful-azaleas")) {
+            woodTypes.add(Pair.of("azule_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("bright_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("fiss_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("roze_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("tecal_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("titanium_azalea", new String[]{"colorful-azaleas"}));
+            woodTypes.add(Pair.of("walnut_azalea", new String[]{"colorful-azaleas"}));
+            Bookshelves.registerColourfulAzaleaBookshelves();
         }
     }
 }

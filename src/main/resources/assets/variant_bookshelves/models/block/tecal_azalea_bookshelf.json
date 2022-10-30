@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "colorful-azaleas:block/tecal_azalea_planks",
+    "side": "variant_bookshelves:block/tecal_azalea_bookshelf"
+  }
+}

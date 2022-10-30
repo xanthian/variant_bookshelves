@@ -106,5 +106,13 @@
   "block.variant_bookshelves.block.golden_oak_bookshelf": "Golden Oak Bookshelf",
   "block.variant_bookshelves.block.orange_bookshelf2": "Orange Bookshelf",
   "block.variant_bookshelves.block.skyroot_bookshelf": "Skyroot Bookshelf",
-  "block.variant_bookshelves.block.wisteria_bookshelf2": "Wisteria Bookshelf"
+  "block.variant_bookshelves.block.wisteria_bookshelf2": "Wisteria Bookshelf",
+
+  "block.variant_bookshelves.block.azule_azalea_bookshelf": "Azule Azalea Bookshelf",
+  "block.variant_bookshelves.block.bright_azalea_bookshelf": "Bright Azalea Bookshelf",
+  "block.variant_bookshelves.block.fiss_azalea_bookshelf": "Fiss Azalea Bookshelf",
+  "block.variant_bookshelves.block.roze_azalea_bookshelf": "Roze Azalea Bookshelf",
+  "block.variant_bookshelves.block.tecal_azalea_bookshelf": "Tecal Azalea Bookshelf",
+  "block.variant_bookshelves.block.titanium_azalea_bookshelf": "Titanium Azalea Bookshelf",
+  "block.variant_bookshelves.block.walnut_azalea_bookshelf": "Walnut Azalea Bookshelf"
 }

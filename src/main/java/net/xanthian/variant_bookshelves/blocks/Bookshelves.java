@@ -212,7 +212,7 @@ public class Bookshelves {
         registerBookshelfBlock("block/jade_bookshelf", JADE_BOOKSHELF, true);
         VariantBookshelfBlock MOON_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/moon_bookshelf", MOON_BOOKSHELF, true);
-        VariantBookshelfBlock SHADOW_BOOKSHELF = new VariantBookshelfBlock(); 
+        VariantBookshelfBlock SHADOW_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/shadow_bookshelf", SHADOW_BOOKSHELF, true);
     }
     // Traverse
@@ -247,6 +247,23 @@ public class Bookshelves {
         registerBookshelfBlock("block/scorched_bookshelf", SCORCHED_BOOKSHELF, true);
         VariantBookshelfBlock UMBRAL_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/umbral_bookshelf", UMBRAL_BOOKSHELF, true);
+    }
+    // Colourful Azalea
+    public static void registerColourfulAzaleaBookshelves() {
+        VariantBookshelfBlock AZULE_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/azule_azalea_bookshelf", AZULE_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock BRIGHT_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/bright_azalea_bookshelf", BRIGHT_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock FISS_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/fiss_azalea_bookshelf", FISS_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock ROZE_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/roze_azalea_bookshelf", ROZE_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock TECAL_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/tecal_azalea_bookshelf", TECAL_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock TITANIUM_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/titanium_azalea_bookshelf", TITANIUM_AZALEA_BOOKSHELF, true);
+        VariantBookshelfBlock WALNUT_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/walnut_azalea_bookshelf", WALNUT_AZALEA_BOOKSHELF, true);
     }
 
     private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
