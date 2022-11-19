@@ -94,6 +94,8 @@
     {"id":"variant_bookshelves:block/roze_azalea_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/tecal_azalea_bookshelf", "required": false},
     {"id":"variant_bookshelves:block/titanium_azalea_bookshelf", "required": false},
-    {"id":"variant_bookshelves:block/walnut_azalea_bookshelf", "required": false}
+    {"id":"variant_bookshelves:block/walnut_azalea_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/baobab_bookshelf", "required": false},
+    {"id":"variant_bookshelves:block/cypress_bookshelf3", "required": false}
   ]
 }

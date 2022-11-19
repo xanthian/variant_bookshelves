@@ -265,8 +265,15 @@ public class Bookshelves {
         VariantBookshelfBlock WALNUT_AZALEA_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/walnut_azalea_bookshelf", WALNUT_AZALEA_BOOKSHELF, true);
     }
+    // Wilder Wild
+    public static void registerWilderWildsBookshelves() {
+        VariantBookshelfBlock BAOBAB_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/baobab_bookshelf", BAOBAB_BOOKSHELF, true);
+        VariantBookshelfBlock CYPRESS_BOOKSHELF3 = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/cypress_bookshelf3", CYPRESS_BOOKSHELF3, true);
+    }
 
-    private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
+        private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
         Registry.register(Registry.BLOCK, identifier, block);
         Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Initialise.VARIANT_BOOKSHELVES)));

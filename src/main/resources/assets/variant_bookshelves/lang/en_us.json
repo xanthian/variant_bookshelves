@@ -114,5 +114,8 @@
   "block.variant_bookshelves.block.roze_azalea_bookshelf": "Roze Azalea Bookshelf",
   "block.variant_bookshelves.block.tecal_azalea_bookshelf": "Tecal Azalea Bookshelf",
   "block.variant_bookshelves.block.titanium_azalea_bookshelf": "Titanium Azalea Bookshelf",
-  "block.variant_bookshelves.block.walnut_azalea_bookshelf": "Walnut Azalea Bookshelf"
+  "block.variant_bookshelves.block.walnut_azalea_bookshelf": "Walnut Azalea Bookshelf",
+
+  "block.variant_bookshelves.block.baobab_bookshelf": "Baobab Bookshelf",
+  "block.variant_bookshelves.block.cypress_bookshelf3": "Cypress Bookshelf"
 }
