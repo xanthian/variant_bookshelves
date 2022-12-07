@@ -3,16 +3,14 @@ package net.xanthian.variant_bookshelves;
 import com.google.common.collect.Lists;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 
-import net.minecraft.SharedConstants;
-import net.minecraft.block.Blocks;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 import net.xanthian.variant_bookshelves.blocks.Bookshelves;
+import net.xanthian.variant_bookshelves.util.ModItemGroup;
 
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -21,31 +19,30 @@ import java.util.List;
 public class Initialise implements ModInitializer {
 
     public static final String MOD_ID = "variant_bookshelves";
-    public static final ItemGroup VARIANT_BOOKSHELVES =
-            FabricItemGroupBuilder.build(new Identifier(Initialise.MOD_ID, "variant_bookshelves"), () -> new ItemStack(Blocks.BOOKSHELF));
+
     public static List<Pair<String, String[]>> woodTypes = Lists.newArrayList();
 
     @Override
     public void onInitialize() {
 
-// lines commented out for duplicate materials, recipe mixin cant handle 2 items of same name :(
+        ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(Initialise.MOD_ID,"3d_bookshelves"),
+                FabricLoader.getInstance().getModContainer(Initialise.MOD_ID).orElseThrow(), ResourcePackActivationType.NORMAL);
+
+        // lines commented out for duplicate materials, recipe mixin cant handle 2 items of same name :(
+        ModItemGroup.registerGroup();
 
         woodTypes.add(Pair.of("acacia", new String[0]));
         woodTypes.add(Pair.of("birch", new String[0]));
         woodTypes.add(Pair.of("dark_oak", new String[0]));
         woodTypes.add(Pair.of("jungle", new String[0]));
         woodTypes.add(Pair.of("spruce", new String[0]));
-        Bookshelves.registerVanillaBookshelves();
+        woodTypes.add(Pair.of("mangrove", new String[0]));
+        Bookshelves.registerOverworldBookshelves();
 
-        if (SharedConstants.getGameVersion().getName().startsWith("1.19")) {
-            woodTypes.add(Pair.of("mangrove", new String[0]));
-            Bookshelves.registerVanilla119Bookshelf();
-        }
-        if (!FabricLoader.getInstance().isModLoaded("betternether")) {
-            woodTypes.add(Pair.of("crimson", new String[0]));
-            woodTypes.add(Pair.of("warped", new String[0]));
-            Bookshelves.registerNetherBookshelves();
-        }
+        woodTypes.add(Pair.of("crimson", new String[0]));
+        woodTypes.add(Pair.of("warped", new String[0]));
+        Bookshelves.registerNetherBookshelves();
+
         if (FabricLoader.getInstance().isModLoaded("techreborn")) {
             woodTypes.add(Pair.of("rubber", new String[]{"techreborn"}));
             Bookshelves.registerTRBookshelves();

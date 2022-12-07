@@ -25,7 +25,7 @@ public abstract class RecipeManagerMixin {
     @Inject(method = "apply", at = @At("HEAD"))
     public void interceptApply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo info) {
         for (Pair<String, String[]> woodType : Initialise.woodTypes) {
-            map.put(new Identifier(Initialise.MOD_ID, woodType.getLeft() + "_bookshelf"), Recipes.createBookshelfRecipeJson(woodType.getLeft(), woodType.getRight()));
+           map.put(new Identifier(Initialise.MOD_ID, woodType.getLeft() + "_bookshelf"), Recipes.createBookshelfRecipeJson(woodType.getLeft(), woodType.getRight()));
         }
     }
 }

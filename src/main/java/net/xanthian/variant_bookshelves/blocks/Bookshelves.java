@@ -5,42 +5,47 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraft.registry.Registry;
 
 import net.xanthian.variant_bookshelves.Initialise;
 
 public class Bookshelves {
 
-    // Vanilla
-    public static void registerVanillaBookshelves() {
-        VariantBookshelfBlock ACACIA_BOOKSHELF = new VariantBookshelfBlock();
+
+    // Overworld
+    public static final VariantBookshelfBlock ACACIA_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock BIRCH_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock DARK_OAK_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock JUNGLE_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock MANGROVE_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock SPRUCE_BOOKSHELF = new VariantBookshelfBlock();
+    // Nether
+    public static final VariantBookshelfBlock CRIMSON_BOOKSHELF = new VariantBookshelfBlock();
+    public static final VariantBookshelfBlock WARPED_BOOKSHELF = new VariantBookshelfBlock();
+
+    public static void registerOverworldBookshelves(){
         registerBookshelfBlock("block/acacia_bookshelf", ACACIA_BOOKSHELF, true);
-        VariantBookshelfBlock BIRCH_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/birch_bookshelf", BIRCH_BOOKSHELF, true);
-        VariantBookshelfBlock DARK_OAK_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/dark_oak_bookshelf", DARK_OAK_BOOKSHELF, true);
-        VariantBookshelfBlock JUNGLE_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/jungle_bookshelf", JUNGLE_BOOKSHELF, true);
-        VariantBookshelfBlock SPRUCE_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/mangrove_bookshelf", MANGROVE_BOOKSHELF, true);
         registerBookshelfBlock("block/spruce_bookshelf", SPRUCE_BOOKSHELF, true);
     }
-    public static void registerVanilla119Bookshelf() {
-        VariantBookshelfBlock MANGROVE_BOOKSHELF = new VariantBookshelfBlock();
-        registerBookshelfBlock("block/mangrove_bookshelf", MANGROVE_BOOKSHELF, true);
-    }
+
     // Nether
     public static void registerNetherBookshelves() {
-        VariantBookshelfBlock CRIMSON_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/crimson_bookshelf", CRIMSON_BOOKSHELF, false);
-        VariantBookshelfBlock WARPED_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/warped_bookshelf", WARPED_BOOKSHELF, false);
     }
+
     // Tech Reborn
     public static void registerTRBookshelves() {
         VariantBookshelfBlock RUBBER_BOOKSHELF = new VariantBookshelfBlock();
         registerBookshelfBlock("block/rubber_bookshelf", RUBBER_BOOKSHELF, true);
     }
+
     // Bewitchment
     public static void registerBewitchmentBookshelves() {
         VariantBookshelfBlock CYPRESS_BOOKSHELF2 = new VariantBookshelfBlock();
@@ -275,8 +280,8 @@ public class Bookshelves {
 
         private static void registerBookshelfBlock(String Id, Block block, boolean canBurn) {
         Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
-        Registry.register(Registry.BLOCK, identifier, block);
-        Registry.register(Registry.ITEM, identifier, new BlockItem(block, new FabricItemSettings().group(Initialise.VARIANT_BOOKSHELVES)));
+        Registry.register(Registries.BLOCK, identifier, block);
+        Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
         if (canBurn) FuelRegistry.INSTANCE.add(block, 300);
     }
 }

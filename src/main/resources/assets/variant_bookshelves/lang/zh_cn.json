@@ -1,0 +1,121 @@
+{
+  "itemGroup.variant_bookshelves.variant_bookshelves" : "Variant??",
+
+  "_vanilla": "Vanilla??",
+  "block.minecraft.bookshelf": "????",
+  "block.variant_bookshelves.block.acacia_bookshelf": "?????",
+  "block.variant_bookshelves.block.birch_bookshelf": "?????",
+  "block.variant_bookshelves.block.dark_oak_bookshelf": "??????",
+  "block.variant_bookshelves.block.jungle_bookshelf": "?????",
+  "block.variant_bookshelves.block.mangrove_bookshelf": "?????",
+  "block.variant_bookshelves.block.spruce_bookshelf": "?????",
+  "block.variant_bookshelves.block.crimson_bookshelf": "????",
+  "block.variant_bookshelves.block.warped_bookshelf": "????",
+
+  "block.variant_bookshelves.block.rubber_bookshelf": "?????",
+
+  "block.variant_bookshelves.block.azalea_bookshelf": "?????",
+  "block.variant_bookshelves.block.coconut_bookshelf": "????",
+  "block.variant_bookshelves.block.flowering_azalea_bookshelf": "????????",
+  "block.variant_bookshelves.block.walnut_bookshelf": "????",
+  "block.variant_bookshelves.block.cinnamon_bookshelf": "????",
+
+  "block.variant_bookshelves.block.jade_bookshelf": "???????",
+  "block.variant_bookshelves.block.moon_bookshelf": "????",
+  "block.variant_bookshelves.block.shadow_bookshelf": "????",
+
+  "block.variant_bookshelves.block.mango_bookshelf": "????",
+
+  "block.variant_bookshelves.block.fir_bookshelf": "????",
+
+  "block.variant_bookshelves.block.cypress_bookshelf": "????",
+  "block.variant_bookshelves.block.hemlock_bookshelf": "????",
+  "block.variant_bookshelves.block.japanese_maple_bookshelf": "??????",
+  "block.variant_bookshelves.block.rainbow_eucalyptus_bookshelf": "??????",
+  "block.variant_bookshelves.block.redwood_bookshelf": "????",
+  "block.variant_bookshelves.block.rubber_bookshelf2": "????",
+  "block.variant_bookshelves.block.sakura_bookshelf": "????",
+  "block.variant_bookshelves.block.willow_bookshelf": "????",
+  "block.variant_bookshelves.block.yucca_palm_bookshelf": "??????",
+
+  "block.variant_bookshelves.block.scorched_bookshelf": "????",
+  "block.variant_bookshelves.block.umbral_bookshelf": "????",
+
+  "block.variant_bookshelves.block.bamboo_bookshelf": "????",
+  "block.variant_bookshelves.block.charred_bookshelf": "????",
+  "block.variant_bookshelves.block.herringbone_acacia_bookshelf": "????????",
+  "block.variant_bookshelves.block.herringbone_bamboo_bookshelf": "???????",
+  "block.variant_bookshelves.block.herringbone_birch_bookshelf": "????????",
+  "block.variant_bookshelves.block.herringbone_charred_bookshelf": "???????",
+  "block.variant_bookshelves.block.herringbone_crimson_bookshelf": "???????",
+  "block.variant_bookshelves.block.herringbone_dark_oak_bookshelf": "?????????",
+  "block.variant_bookshelves.block.herringbone_jungle_bookshelf": "????????",
+  "block.variant_bookshelves.block.herringbone_mangrove_bookshelf": "????????",
+  "block.variant_bookshelves.block.herringbone_oak_bookshelf": "???????",
+  "block.variant_bookshelves.block.herringbone_spruce_bookshelf": "????????",
+  "block.variant_bookshelves.block.herringbone_warped_bookshelf": "???????",
+  "block.variant_bookshelves.block.herringbone_white_oak_bookshelf": "?????????",
+  "block.variant_bookshelves.block.legacy_bookshelf": "????",
+  "block.variant_bookshelves.block.white_oak_bookshelf": "??????",
+
+  "block.variant_bookshelves.block.cypress_bookshelf2": "????",
+  "block.variant_bookshelves.block.dragons_blood_bookshelf": "????",
+  "block.variant_bookshelves.block.elder_bookshelf": "????",
+  "block.variant_bookshelves.block.juniper_bookshelf": "????",
+
+  "block.variant_bookshelves.block.ancient_oak_bookshelf": "?????",
+  "block.variant_bookshelves.block.blighted_balsa_bookshelf": "???????",
+  "block.variant_bookshelves.block.swamp_cypress_bookshelf": "??????",
+  "block.variant_bookshelves.block.willow_bookshelf2": "????",
+
+  "block.variant_bookshelves.block.dreamwood_bookshelf": "????",
+  "block.variant_bookshelves.block.livingwood_bookshelf": "????",
+  "block.variant_bookshelves.block.mossy_dreamwood_bookshelf": "??????",
+  "block.variant_bookshelves.block.mossy_livingwood_bookshelf": "??????",
+  "block.variant_bookshelves.block.shimmerwood_bookshelf": "?????",
+
+  "block.variant_bookshelves.block.cherry_oak_bookshelf": "??????",
+  "block.variant_bookshelves.block.dark_amaranth_bookshelf": "??????",
+  "block.variant_bookshelves.block.palm_bookshelf": "????",
+
+  "block.variant_bookshelves.block.black_bookshelf": "????",
+  "block.variant_bookshelves.block.blue_bookshelf": "????",
+  "block.variant_bookshelves.block.brown_bookshelf": "????",
+  "block.variant_bookshelves.block.cyan_bookshelf": "????",
+  "block.variant_bookshelves.block.gray_bookshelf": "????",
+  "block.variant_bookshelves.block.green_bookshelf": "????",
+  "block.variant_bookshelves.block.light_blue_bookshelf": "?????",
+  "block.variant_bookshelves.block.light_gray_bookshelf": "?????",
+  "block.variant_bookshelves.block.lime_bookshelf": "?????",
+  "block.variant_bookshelves.block.magenta_bookshelf": "?????",
+  "block.variant_bookshelves.block.orange_bookshelf": "????",
+  "block.variant_bookshelves.block.pink_bookshelf": "????",
+  "block.variant_bookshelves.block.purple_bookshelf": "????",
+  "block.variant_bookshelves.block.red_bookshelf": "????",
+  "block.variant_bookshelves.block.white_bookshelf": "????",
+  "block.variant_bookshelves.block.yellow_bookshelf": "????",
+
+  "block.variant_bookshelves.block.wisteria_bookshelf": "????",
+
+  "block.variant_bookshelves.block.bamboo_bookshelf2": "????",
+  "block.variant_bookshelves.block.redwood_bookshelf2": "????",
+
+  "block.variant_bookshelves.block.stripped_bamboo_bookshelf": "??????",
+
+  "block.variant_bookshelves.block.crystal_bookshelf": "????",
+  "block.variant_bookshelves.block.golden_oak_bookshelf": "?????",
+  "block.variant_bookshelves.block.orange_bookshelf2": "????",
+  "block.variant_bookshelves.block.skyroot_bookshelf": "?????",
+  "block.variant_bookshelves.block.wisteria_bookshelf2": "????",
+
+  "block.variant_bookshelves.block.azule_azalea_bookshelf": "???????",
+  "block.variant_bookshelves.block.bright_azalea_bookshelf": "???????",
+  "block.variant_bookshelves.block.fiss_azalea_bookshelf": "Fiss?????",
+  "block.variant_bookshelves.block.roze_azalea_bookshelf": "Roze?????",
+  "block.variant_bookshelves.block.tecal_azalea_bookshelf": "Tecal?????",
+  "block.variant_bookshelves.block.titanium_azalea_bookshelf": "Titanium?????",
+  "block.variant_bookshelves.block.walnut_azalea_bookshelf": "Walnut?????",
+
+  "block.variant_bookshelves.block.baobab_bookshelf": "?????",
+  "block.variant_bookshelves.block.cypress_bookshelf3": "????"
+}

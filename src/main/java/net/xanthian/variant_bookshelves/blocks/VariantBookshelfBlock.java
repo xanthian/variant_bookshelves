@@ -8,4 +8,5 @@ public class VariantBookshelfBlock extends Block {
     public VariantBookshelfBlock() {
         super(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     }
+
 }

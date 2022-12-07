@@ -12,7 +12,6 @@ public class Recipes {
     public static JsonObject createBookshelfRecipeJson(String material, String[] mods) {
         Gson gson = new Gson();
         JsonArray modList = gson.toJsonTree(mods).getAsJsonArray();
-
         JsonObject json = new JsonObject();
         String modPrefix = "";
 
@@ -24,8 +23,8 @@ public class Recipes {
             loadCondition.add("values", modList);
             loadConditions.add(loadCondition);
             json.add("fabric:load_conditions", loadConditions);
-        }
 
+        }
         json.addProperty("type", "minecraft:crafting_shaped");
 
         JsonArray pattern = new JsonArray();
