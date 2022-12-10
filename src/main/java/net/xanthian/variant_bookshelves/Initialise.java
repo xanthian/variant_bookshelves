@@ -4,6 +4,8 @@ import com.google.common.collect.Lists;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 
 import net.minecraft.SharedConstants;
@@ -28,6 +30,8 @@ public class Initialise implements ModInitializer {
     @Override
     public void onInitialize() {
 
+        ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(Initialise.MOD_ID,"3d_bookshelves"),
+                FabricLoader.getInstance().getModContainer(Initialise.MOD_ID).orElseThrow(), ResourcePackActivationType.NORMAL);
 // lines commented out for duplicate materials, recipe mixin cant handle 2 items of same name :(
 
         woodTypes.add(Pair.of("acacia", new String[0]));
