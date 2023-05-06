@@ -176,11 +176,13 @@ public class Initialise implements ModInitializer {
             Bookshelves.registerTwigsBookshelves();
         }
         if(FabricLoader.getInstance().isModLoaded("paradise_lost")) {
-            woodTypes.add(Pair.of("crystal", new String[]{"paradise_lost"}));
-            woodTypes.add(Pair.of("golden_oak", new String[]{"paradise_lost"}));
+            //woodTypes.add(Pair.of("crystal", new String[]{"paradise_lost"}));
+            //woodTypes.add(Pair.of("golden_oak", new String[]{"paradise_lost"}));
             //woodTypes.add(Pair.of("orange", new String[]{"paradise_lost"}));
-            woodTypes.add(Pair.of("skyroot", new String[]{"paradise_lost"}));
+            //woodTypes.add(Pair.of("skyroot", new String[]{"paradise_lost"}));
             //woodTypes.add(Pair.of("wisteria", new String[]{"paradise_lost"}));
+            woodTypes.add(Pair.of("aurel", new String[]{"paradise_lost"}));
+            woodTypes.add(Pair.of("mother_aurel", new String[]{"paradise_lost"}));
             Bookshelves.registerParadiseLostBookshelves();
         }
         if(FabricLoader.getInstance().isModLoaded("colorful-azaleas")) {

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "paradise_lost:block/aurel_planks",
+    "side": "variant_bookshelves:block/aurel_bookshelf"
+  }
+}

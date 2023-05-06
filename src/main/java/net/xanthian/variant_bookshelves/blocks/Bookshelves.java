@@ -200,6 +200,10 @@ public class Bookshelves {
         registerBookshelfBlock("block/skyroot_bookshelf", SKYROOT_BOOKSHELF, true);
         VariantBookshelfBlock WISTERIA_BOOKSHELF2 = new VariantBookshelfBlock();
         registerBookshelfBlock("block/wisteria_bookshelf2", WISTERIA_BOOKSHELF2, true);
+        VariantBookshelfBlock AUREL_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/aurel_bookshelf", AUREL_BOOKSHELF, true);
+        VariantBookshelfBlock MOTHER_AUREL_BOOKSHELF = new VariantBookshelfBlock();
+        registerBookshelfBlock("block/mother_aurel_bookshelf", MOTHER_AUREL_BOOKSHELF, true);
     }
     // Croptopia
     public static void registerCroptopiaBookshelves() {
