@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "botania:block/mossy_livingwood_planks",
-    "side": "variant_bookshelves:block/mossy_livingwood_bookshelf"
-  }
-}

@@ -1,0 +1,14 @@
+{
+  "itemGroup.variantbookshelves.variantbookshelves" : "Variant书架",
+
+  "block.minecraft.bookshelf": "橡木书架",
+  "block.variantbookshelves.block.acacia_bookshelf": "金合欢书架",
+  "block.variantbookshelves.block.birch_bookshelf": "白桦木书架",
+  "block.variantbookshelves.block.dark_oak_bookshelf": "深色橡木书架",
+  "block.variantbookshelves.block.jungle_bookshelf": "丛林木书架",
+  "block.variantbookshelves.block.mangrove_bookshelf": "红树木书架",
+  "block.variantbookshelves.block.spruce_bookshelf": "云杉木书架",
+  "block.variantbookshelves.block.crimson_bookshelf": "深红书架",
+  "block.variantbookshelves.block.warped_bookshelf": "诡异书架"
+
+}

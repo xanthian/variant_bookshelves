@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "variant_bookshelves",
+  "id": "variantbookshelves",
   "version": "${version}",
 
   "name": "Variant Bookshelves",
@@ -10,13 +10,13 @@
   "icon": "assets/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.variant_bookshelves.Initialise"]
+    "main": ["net.xanthian.variantbookshelves.Initialise"],
+    "fabric-datagen": ["net.xanthian.variantbookshelves.DataGenerator"]
   },
-  "mixins": ["variant_bookshelves.mixins.json"],
   "depends": {
-    "fabricloader": ">=0.14.6",
+    "fabricloader": ">=0.14.20",
     "fabric": "*",
-    "minecraft": ">=1.18.2",
+    "minecraft": "1.20.x",
     "java": ">=17"
   }
 }

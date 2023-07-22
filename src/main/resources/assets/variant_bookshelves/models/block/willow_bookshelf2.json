@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "biomemakeover:block/willow_planks",
-    "side": "variant_bookshelves:block/willow_bookshelf2"
-  }
-}

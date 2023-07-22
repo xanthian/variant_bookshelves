@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "wilderwild:block/baobab_planks",
-    "side": "variant_bookshelves:block/baobab_bookshelf"
-  }
-}

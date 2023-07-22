@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "arclight:block/jade_planks",
-    "side": "variant_bookshelves:block/jade_bookshelf"
-  }
-}

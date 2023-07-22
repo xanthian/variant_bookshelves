@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "blockus:block/herringbone_birch_planks",
-    "side": "variant_bookshelves:block/herringbone_birch_bookshelf"
-  }
-}

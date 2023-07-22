@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "terrestria:block/redwood_planks",
-    "side": "variant_bookshelves:block/redwood_bookshelf"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "terrestria:block/cypress_planks",
-    "side": "variant_bookshelves:block/cypress_bookshelf"
-  }
-}

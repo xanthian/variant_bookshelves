@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "spectrum:block/magenta_planks",
-    "side": "variant_bookshelves:block/magenta_bookshelf"
-  }
-}
