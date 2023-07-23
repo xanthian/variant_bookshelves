@@ -1,0 +1,14 @@
+{
+  "block.minecraft.bookshelf": "Oak Bookshelf",
+  "block.variantbookshelves.acacia_bookshelf": "Acacia Bookshelf",
+  "block.variantbookshelves.bamboo_bookshelf": "Bamboo Bookshelf",
+  "block.variantbookshelves.birch_bookshelf": "Birch Bookshelf",
+  "block.variantbookshelves.cherry_bookshelf": "Cherry Bookshelf",
+  "block.variantbookshelves.crimson_bookshelf": "Crimson Bookshelf",
+  "block.variantbookshelves.dark_oak_bookshelf": "Dark Oak Bookshelf",
+  "block.variantbookshelves.jungle_bookshelf": "Jungle Bookshelf",
+  "block.variantbookshelves.mangrove_bookshelf": "Mangrove Bookshelf",
+  "block.variantbookshelves.spruce_bookshelf": "Spruce Bookshelf",
+  "block.variantbookshelves.warped_bookshelf": "Warped Bookshelf",
+  "variantbookshelves.group.variantbookshelves": "Variant Bookshelves"
+}

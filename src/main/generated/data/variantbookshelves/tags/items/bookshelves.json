@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "variantbookshelves:acacia_bookshelf",
+    "variantbookshelves:bamboo_bookshelf",
+    "variantbookshelves:birch_bookshelf",
+    "variantbookshelves:cherry_bookshelf",
+    "variantbookshelves:crimson_bookshelf",
+    "variantbookshelves:dark_oak_bookshelf",
+    "variantbookshelves:jungle_bookshelf",
+    "variantbookshelves:mangrove_bookshelf",
+    "variantbookshelves:spruce_bookshelf",
+    "variantbookshelves:warped_bookshelf"
+  ]
+}

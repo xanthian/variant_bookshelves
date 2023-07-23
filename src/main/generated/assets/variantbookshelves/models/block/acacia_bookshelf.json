@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/acacia_planks",
+    "east": "variantbookshelves:block/acacia_bookshelf",
+    "north": "variantbookshelves:block/acacia_bookshelf",
+    "particle": "variantbookshelves:block/acacia_bookshelf",
+    "south": "variantbookshelves:block/acacia_bookshelf",
+    "up": "minecraft:block/acacia_planks",
+    "west": "variantbookshelves:block/acacia_bookshelf"
+  }
+}

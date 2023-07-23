@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/mangrove_planks",
+    "east": "variantbookshelves:block/mangrove_bookshelf",
+    "north": "variantbookshelves:block/mangrove_bookshelf",
+    "particle": "variantbookshelves:block/mangrove_bookshelf",
+    "south": "variantbookshelves:block/mangrove_bookshelf",
+    "up": "minecraft:block/mangrove_planks",
+    "west": "variantbookshelves:block/mangrove_bookshelf"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/crimson_planks",
+    "east": "variantbookshelves:block/crimson_bookshelf",
+    "north": "variantbookshelves:block/crimson_bookshelf",
+    "particle": "variantbookshelves:block/crimson_bookshelf",
+    "south": "variantbookshelves:block/crimson_bookshelf",
+    "up": "minecraft:block/crimson_planks",
+    "west": "variantbookshelves:block/crimson_bookshelf"
+  }
+}

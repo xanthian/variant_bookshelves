@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecraft:block/jungle_planks",
+    "east": "variantbookshelves:block/jungle_bookshelf",
+    "north": "variantbookshelves:block/jungle_bookshelf",
+    "particle": "variantbookshelves:block/jungle_bookshelf",
+    "south": "variantbookshelves:block/jungle_bookshelf",
+    "up": "minecraft:block/jungle_planks",
+    "west": "variantbookshelves:block/jungle_bookshelf"
+  }
+}
