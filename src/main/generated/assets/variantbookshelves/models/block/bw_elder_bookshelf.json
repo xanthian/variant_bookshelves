@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "bewitchment:block/elder_planks",
+    "east": "variantbookshelves:block/bw_elder_bookshelf",
+    "north": "variantbookshelves:block/bw_elder_bookshelf",
+    "particle": "variantbookshelves:block/bw_elder_bookshelf",
+    "south": "variantbookshelves:block/bw_elder_bookshelf",
+    "up": "bewitchment:block/elder_planks",
+    "west": "variantbookshelves:block/bw_elder_bookshelf"
+  }
+}

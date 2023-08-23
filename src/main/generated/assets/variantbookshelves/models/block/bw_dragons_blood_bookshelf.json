@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "bewitchment:block/dragons_blood_planks",
+    "east": "variantbookshelves:block/bw_dragons_blood_bookshelf",
+    "north": "variantbookshelves:block/bw_dragons_blood_bookshelf",
+    "particle": "variantbookshelves:block/bw_dragons_blood_bookshelf",
+    "south": "variantbookshelves:block/bw_dragons_blood_bookshelf",
+    "up": "bewitchment:block/dragons_blood_planks",
+    "west": "variantbookshelves:block/bw_dragons_blood_bookshelf"
+  }
+}

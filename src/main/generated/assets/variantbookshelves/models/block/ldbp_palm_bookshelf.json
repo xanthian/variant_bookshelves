@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "beachparty:block/palm_planks0",
+    "east": "variantbookshelves:block/ldbp_palm_bookshelf",
+    "north": "variantbookshelves:block/ldbp_palm_bookshelf",
+    "particle": "variantbookshelves:block/ldbp_palm_bookshelf",
+    "south": "variantbookshelves:block/ldbp_palm_bookshelf",
+    "up": "beachparty:block/palm_planks0",
+    "west": "variantbookshelves:block/ldbp_palm_bookshelf"
+  }
+}

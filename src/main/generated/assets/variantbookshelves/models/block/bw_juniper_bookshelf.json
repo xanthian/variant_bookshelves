@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "bewitchment:block/juniper_planks",
+    "east": "variantbookshelves:block/bw_juniper_bookshelf",
+    "north": "variantbookshelves:block/bw_juniper_bookshelf",
+    "particle": "variantbookshelves:block/bw_juniper_bookshelf",
+    "south": "variantbookshelves:block/bw_juniper_bookshelf",
+    "up": "bewitchment:block/juniper_planks",
+    "west": "variantbookshelves:block/bw_juniper_bookshelf"
+  }
+}

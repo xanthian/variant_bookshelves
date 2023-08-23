@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/eucalyptus_planks",
+    "east": "variantbookshelves:block/ru_eucalyptus_bookshelf",
+    "north": "variantbookshelves:block/ru_eucalyptus_bookshelf",
+    "particle": "variantbookshelves:block/ru_eucalyptus_bookshelf",
+    "south": "variantbookshelves:block/ru_eucalyptus_bookshelf",
+    "up": "regions_unexplored:block/eucalyptus_planks",
+    "west": "variantbookshelves:block/ru_eucalyptus_bookshelf"
+  }
+}

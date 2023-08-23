@@ -14,14 +14,15 @@ import net.xanthian.variantbookshelves.block.*;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.registry.tag.BlockTags.AXE_MINEABLE;
+import static net.minecraft.registry.tag.BlockTags.ENCHANTMENT_POWER_PROVIDER;
+
 public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
     public BlockTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     public static final TagKey<Block> BOOKSHELVES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(Initialise.MOD_ID,"bookshelves"));
-    private static final TagKey<Block> MINEABLE_AXE = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft:mineable/axe"));
-    private static final TagKey<Block> ENCHANTMENT_POWER_PROVIDER = TagKey.of(Registries.BLOCK.getKey(), new Identifier("minecraft:enchantment_power_provider"));
     private static final TagKey<Block> C_BOOKSHELF = TagKey.of(Registries.BLOCK.getKey(), new Identifier("c:bookshelves"));
 
     @Override
@@ -37,9 +38,66 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
                 .add(Vanilla.JUNGLE_BOOKSHELF)
                 .add(Vanilla.MANGROVE_BOOKSHELF)
                 .add(Vanilla.SPRUCE_BOOKSHELF)
-                .add(Vanilla.WARPED_BOOKSHELF);
+                .add(Vanilla.WARPED_BOOKSHELF)
+        
+                .addOptional(new Identifier("variantbookshelves:aa_aeronos_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:aa_glacian_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:aa_stropar_bookshelf"))
 
-        getOrCreateTagBuilder(MINEABLE_AXE)
+                .addOptional(new Identifier("variantbookshelves:ldbp_palm_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:ba_rotten_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:bw_cypress_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:bw_dragons_blood_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:bw_elder_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:bw_juniper_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:prom_maple_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:prom_palm_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:prom_sakura_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:ru_alpha_oak_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_baobab_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_black_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_blackwood_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_blue_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_brown_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_cherry_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_cyan_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_cypress_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_dead_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_eucalyptus_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_green_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_gray_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_joshua_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_larch_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_light_blue_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_light_gray_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_lime_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_magenta_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_maple_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_mauve_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_orange_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_palm_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_pine_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_pink_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_purple_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_red_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_redwood_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_sculkwood_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_white_painted_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_willow_bookshelf"))
+                .addOptional(new Identifier("variantbookshelves:ru_yellow_painted_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:sp_stone_pine_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:tr_rubber_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:ldv_cherry_bookshelf"));
+
+        getOrCreateTagBuilder(AXE_MINEABLE)
                 .forceAddTag(BOOKSHELVES);
 
         getOrCreateTagBuilder(ENCHANTMENT_POWER_PROVIDER)

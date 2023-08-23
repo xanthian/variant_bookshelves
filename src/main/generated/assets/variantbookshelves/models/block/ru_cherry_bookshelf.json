@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/cherry_planks",
+    "east": "variantbookshelves:block/ru_cherry_bookshelf",
+    "north": "variantbookshelves:block/ru_cherry_bookshelf",
+    "particle": "variantbookshelves:block/ru_cherry_bookshelf",
+    "south": "variantbookshelves:block/ru_cherry_bookshelf",
+    "up": "regions_unexplored:block/cherry_planks",
+    "west": "variantbookshelves:block/ru_cherry_bookshelf"
+  }
+}

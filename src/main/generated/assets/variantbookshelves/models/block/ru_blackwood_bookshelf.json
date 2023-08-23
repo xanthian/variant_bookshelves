@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/blackwood_planks",
+    "east": "variantbookshelves:block/ru_blackwood_bookshelf",
+    "north": "variantbookshelves:block/ru_blackwood_bookshelf",
+    "particle": "variantbookshelves:block/ru_blackwood_bookshelf",
+    "south": "variantbookshelves:block/ru_blackwood_bookshelf",
+    "up": "regions_unexplored:block/blackwood_planks",
+    "west": "variantbookshelves:block/ru_blackwood_bookshelf"
+  }
+}

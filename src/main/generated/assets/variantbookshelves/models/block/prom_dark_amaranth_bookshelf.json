@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "promenade:block/dark_amaranth/planks",
+    "east": "variantbookshelves:block/prom_dark_amaranth_bookshelf",
+    "north": "variantbookshelves:block/prom_dark_amaranth_bookshelf",
+    "particle": "variantbookshelves:block/prom_dark_amaranth_bookshelf",
+    "south": "variantbookshelves:block/prom_dark_amaranth_bookshelf",
+    "up": "promenade:block/dark_amaranth/planks",
+    "west": "variantbookshelves:block/prom_dark_amaranth_bookshelf"
+  }
+}

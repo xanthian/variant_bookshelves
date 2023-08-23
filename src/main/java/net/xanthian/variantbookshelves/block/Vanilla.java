@@ -23,7 +23,7 @@ public class Vanilla {
     public static final VariantBookshelfBlock WARPED_BOOKSHELF = new VariantBookshelfBlock();
     public static final VariantBookshelfBlock CRIMSON_BOOKSHELF = new VariantBookshelfBlock();
 
-    public static void registerShelves() {
+    public static void registerBookshelves() {
         registerBookshelfBlock("acacia_bookshelf", ACACIA_BOOKSHELF);
         registerBookshelfBlock("bamboo_bookshelf", BAMBOO_BOOKSHELF);
         registerBookshelfBlock("birch_bookshelf", BIRCH_BOOKSHELF);

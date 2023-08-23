@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "ad_astra:block/glacian_planks",
+    "east": "variantbookshelves:block/aa_glacian_bookshelf",
+    "north": "variantbookshelves:block/aa_glacian_bookshelf",
+    "particle": "variantbookshelves:block/aa_glacian_bookshelf",
+    "south": "variantbookshelves:block/aa_glacian_bookshelf",
+    "up": "ad_astra:block/glacian_planks",
+    "west": "variantbookshelves:block/aa_glacian_bookshelf"
+  }
+}

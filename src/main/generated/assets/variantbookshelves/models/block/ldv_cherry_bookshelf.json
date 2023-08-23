@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "vinery:block/cherry_planks",
+    "east": "variantbookshelves:block/ldv_cherry_bookshelf",
+    "north": "variantbookshelves:block/ldv_cherry_bookshelf",
+    "particle": "variantbookshelves:block/ldv_cherry_bookshelf",
+    "south": "variantbookshelves:block/ldv_cherry_bookshelf",
+    "up": "vinery:block/cherry_planks",
+    "west": "variantbookshelves:block/ldv_cherry_bookshelf"
+  }
+}

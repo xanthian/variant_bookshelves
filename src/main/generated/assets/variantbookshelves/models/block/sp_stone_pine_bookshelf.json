@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "snifferplus:block/stone_pine_planks",
+    "east": "variantbookshelves:block/sp_stone_pine_bookshelf",
+    "north": "variantbookshelves:block/sp_stone_pine_bookshelf",
+    "particle": "variantbookshelves:block/sp_stone_pine_bookshelf",
+    "south": "variantbookshelves:block/sp_stone_pine_bookshelf",
+    "up": "snifferplus:block/stone_pine_planks",
+    "west": "variantbookshelves:block/sp_stone_pine_bookshelf"
+  }
+}

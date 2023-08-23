@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/black_painted_planks",
+    "east": "variantbookshelves:block/ru_black_painted_bookshelf",
+    "north": "variantbookshelves:block/ru_black_painted_bookshelf",
+    "particle": "variantbookshelves:block/ru_black_painted_bookshelf",
+    "south": "variantbookshelves:block/ru_black_painted_bookshelf",
+    "up": "regions_unexplored:block/black_painted_planks",
+    "west": "variantbookshelves:block/ru_black_painted_bookshelf"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "bewitchment:block/cypress_planks",
+    "east": "variantbookshelves:block/bw_cypress_bookshelf",
+    "north": "variantbookshelves:block/bw_cypress_bookshelf",
+    "particle": "variantbookshelves:block/bw_cypress_bookshelf",
+    "south": "variantbookshelves:block/bw_cypress_bookshelf",
+    "up": "bewitchment:block/cypress_planks",
+    "west": "variantbookshelves:block/bw_cypress_bookshelf"
+  }
+}

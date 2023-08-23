@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "betterarcheology:block/rotten_planks",
+    "east": "variantbookshelves:block/ba_rotten_bookshelf",
+    "north": "variantbookshelves:block/ba_rotten_bookshelf",
+    "particle": "variantbookshelves:block/ba_rotten_bookshelf",
+    "south": "variantbookshelves:block/ba_rotten_bookshelf",
+    "up": "betterarcheology:block/rotten_planks",
+    "west": "variantbookshelves:block/ba_rotten_bookshelf"
+  }
+}

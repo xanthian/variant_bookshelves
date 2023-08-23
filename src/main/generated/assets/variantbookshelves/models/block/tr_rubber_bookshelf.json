@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "techreborn:block/rubber_planks",
+    "east": "variantbookshelves:block/tr_rubber_bookshelf",
+    "north": "variantbookshelves:block/tr_rubber_bookshelf",
+    "particle": "variantbookshelves:block/tr_rubber_bookshelf",
+    "south": "variantbookshelves:block/tr_rubber_bookshelf",
+    "up": "techreborn:block/rubber_planks",
+    "west": "variantbookshelves:block/tr_rubber_bookshelf"
+  }
+}

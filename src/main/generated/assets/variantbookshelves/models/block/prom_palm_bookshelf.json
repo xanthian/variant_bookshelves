@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "promenade:block/palm/planks",
+    "east": "variantbookshelves:block/prom_palm_bookshelf",
+    "north": "variantbookshelves:block/prom_palm_bookshelf",
+    "particle": "variantbookshelves:block/prom_palm_bookshelf",
+    "south": "variantbookshelves:block/prom_palm_bookshelf",
+    "up": "promenade:block/palm/planks",
+    "west": "variantbookshelves:block/prom_palm_bookshelf"
+  }
+}
