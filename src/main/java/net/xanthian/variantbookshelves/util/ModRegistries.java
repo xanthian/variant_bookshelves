@@ -50,6 +50,9 @@ public class ModRegistries {
             registry.add(Bewitchment.BW_ELDER_BOOKSHELF, 30, 20);
             registry.add(Bewitchment.BW_JUNIPER_BOOKSHELF, 30, 20);
         }
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+            registry.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, 30, 20);
+        }
         if (FabricLoader.getInstance().isModLoaded("promenade")) {
             registry.add(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, 30, 20);
             registry.add(Promenade.PROM_MAPLE_BOOKSHELF, 30, 20);
@@ -133,6 +136,9 @@ public class ModRegistries {
                 registry.add(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, 300);
                 registry.add(Bewitchment.BW_ELDER_BOOKSHELF, 300);
                 registry.add(Bewitchment.BW_JUNIPER_BOOKSHELF, 300);
+            }
+            if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+                registry.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, 300);
             }
             if (FabricLoader.getInstance().isModLoaded("promenade")) {
                 registry.add(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, 300);

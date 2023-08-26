@@ -40,6 +40,8 @@ public class LangFileGenerator extends FabricLanguageProvider {
         translationBuilder.add(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, "Dragon's Blood Bookshelf");
         translationBuilder.add(Bewitchment.BW_ELDER_BOOKSHELF, "Elder Bookshelf");
         translationBuilder.add(Bewitchment.BW_JUNIPER_BOOKSHELF, "Juniper Bookshelf");
+        // Deeper & Darker
+        translationBuilder.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, "Echo Bookshelf");
         // Promenade
         translationBuilder.add(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, "Dark Amaranth Bookshelf");
         translationBuilder.add(Promenade.PROM_MAPLE_BOOKSHELF, "Maple Bookshelf");

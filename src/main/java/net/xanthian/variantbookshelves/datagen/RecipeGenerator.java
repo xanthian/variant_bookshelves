@@ -55,6 +55,8 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:dragons_blood_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_ELDER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:elder_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:juniper_planks")));
+        // Deeper & Darker (disabled)
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("deeperdarker")),DeeperAndDarker.DAD_ECHO_BOOKSHELF, Registries.ITEM.get(new Identifier("deeperanddarker:echo_planks")));
         // Promenade
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_DARK_AMARANTH_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:dark_amaranth_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_MAPLE_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:maple_planks")));

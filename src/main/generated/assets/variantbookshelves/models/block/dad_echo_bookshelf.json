@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "deeperdarker:block/echo_planks",
+    "east": "variantbookshelves:block/dad_echo_bookshelf",
+    "north": "variantbookshelves:block/dad_echo_bookshelf",
+    "particle": "variantbookshelves:block/dad_echo_bookshelf",
+    "south": "variantbookshelves:block/dad_echo_bookshelf",
+    "up": "deeperdarker:block/echo_planks",
+    "west": "variantbookshelves:block/dad_echo_bookshelf"
+  }
+}

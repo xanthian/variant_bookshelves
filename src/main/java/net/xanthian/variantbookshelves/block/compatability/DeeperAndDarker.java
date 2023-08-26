@@ -2,26 +2,22 @@ package net.xanthian.variantbookshelves.block.compatability;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
 import net.xanthian.variantbookshelves.Initialise;
 
-public class Bewitchment {
 
-    public static Block BW_CYPRESS_BOOKSHELF;
-    public static Block BW_DRAGONS_BLOOD_BOOKSHELF;
-    public static Block BW_ELDER_BOOKSHELF;
-    public static Block BW_JUNIPER_BOOKSHELF;
+public class DeeperAndDarker {
+    public static Block DAD_ECHO_BOOKSHELF;
 
     public static void registerBookshelves() {
-        BW_CYPRESS_BOOKSHELF = registerBookshelf("bw_cypress_bookshelf");
-        BW_DRAGONS_BLOOD_BOOKSHELF = registerBookshelf("bw_dragons_blood_bookshelf");
-        BW_ELDER_BOOKSHELF = registerBookshelf("bw_elder_bookshelf");
-        BW_JUNIPER_BOOKSHELF = registerBookshelf("bw_juniper_bookshelf");
+        DAD_ECHO_BOOKSHELF = registerBookshelf("dad_echo_bookshelf");
     }
 
     public static Block register(String Id, Block block) {

@@ -37,6 +37,9 @@ public class Initialise implements ModInitializer {
         if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
             Bewitchment.registerBookshelves();
         }
+        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) { // DISABLE FOR DATAGEN
+            DeeperAndDarker.registerBookshelves();
+        }
         if (FabricLoader.getInstance().isModLoaded("promenade")) {
             Promenade.registerBookshelves();
         }

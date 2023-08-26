@@ -48,6 +48,11 @@ sourceSets {
 		}
 	}
 }
+configurations.all {
+	resolutionStrategy {
+		force("net.fabricmc:fabric-loader:$loader_version")
+	}
+}
 dependencies {
 	implementation 'org.jetbrains:annotations:24.0.0'
 	// To change the versions see the gradle.properties file

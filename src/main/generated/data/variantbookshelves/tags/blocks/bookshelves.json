@@ -48,6 +48,10 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:dad_echo_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:prom_dark_amaranth_bookshelf",
       "required": false
     },

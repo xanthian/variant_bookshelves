@@ -2,26 +2,32 @@ package net.xanthian.variantbookshelves.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 import net.xanthian.variantbookshelves.Initialise;
 
 public class Vanilla {
 
-    public static final VariantBookshelfBlock ACACIA_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock BAMBOO_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock BIRCH_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock CHERRY_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock DARK_OAK_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock JUNGLE_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock MANGROVE_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock SPRUCE_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock WARPED_BOOKSHELF = new VariantBookshelfBlock();
-    public static final VariantBookshelfBlock CRIMSON_BOOKSHELF = new VariantBookshelfBlock();
+    public static final Block ACACIA_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block BIRCH_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block CHERRY_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block CRIMSON_BOOKSHELF = new Block(FabricBlockSettings.create().mapColor(MapColor.DARK_CRIMSON).instrument(Instrument.BASS).strength(1.5f).sounds(BlockSoundGroup.WOOD));
+    public static final Block DARK_OAK_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block JUNGLE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block MANGROVE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block SPRUCE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
+    public static final Block WARPED_BOOKSHELF = new Block(FabricBlockSettings.create().mapColor(MapColor.DARK_AQUA).instrument(Instrument.BASS).strength(1.5f).sounds(BlockSoundGroup.WOOD));
 
     public static void registerBookshelves() {
         registerBookshelfBlock("acacia_bookshelf", ACACIA_BOOKSHELF);

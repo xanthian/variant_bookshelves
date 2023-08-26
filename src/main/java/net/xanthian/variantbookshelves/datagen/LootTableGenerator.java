@@ -49,6 +49,8 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, addConditions(drops(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("bewitchment"))));
         addDrop(Bewitchment.BW_ELDER_BOOKSHELF, addConditions(drops(Bewitchment.BW_ELDER_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("bewitchment"))));
         addDrop(Bewitchment.BW_JUNIPER_BOOKSHELF, addConditions(drops(Bewitchment.BW_JUNIPER_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("bewitchment"))));
+        // Deeper & Darker
+        addDrop(DeeperAndDarker.DAD_ECHO_BOOKSHELF, addConditions(drops(DeeperAndDarker.DAD_ECHO_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("deeperdarker"))));
         // Promenade
         addDrop(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, addConditions(drops(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("promenade"))));
         addDrop(Promenade.PROM_MAPLE_BOOKSHELF, addConditions(drops(Promenade.PROM_MAPLE_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("promenade"))));

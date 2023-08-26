@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -13,7 +14,6 @@ import net.xanthian.variantbookshelves.block.*;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.minecraft.registry.tag.ItemTags.NON_FLAMMABLE_WOOD;
 import static net.xanthian.variantbookshelves.util.ModItemTags.BOOKSHELVES;
 
 public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
@@ -50,6 +50,8 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
                     .addOptional(new Identifier("variantbookshelves:bw_dragons_blood_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:bw_elder_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:bw_juniper_bookshelf"))
+
+                    .addOptional(new Identifier("variantbookshelves:dad_echo_bookshelf"))
 
                     .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:prom_maple_bookshelf"))
@@ -95,7 +97,7 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
                     .addOptional(new Identifier("variantbookshelves:ldv_cherry_bookshelf"));
 
-            getOrCreateTagBuilder(NON_FLAMMABLE_WOOD)
+            getOrCreateTagBuilder(ItemTags.NON_FLAMMABLE_WOOD)
                     .add(Vanilla.CRIMSON_BOOKSHELF.asItem())
                     .add(Vanilla.WARPED_BOOKSHELF.asItem());
 

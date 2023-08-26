@@ -47,6 +47,8 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:dragons_blood_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_ELDER_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:elder_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:juniper_planks")), ModTextureMap::endside);
+        // Deeper & Darker
+        registerNonStandardCube(blockStateModelGenerator,DeeperAndDarker.DAD_ECHO_BOOKSHELF,  "deeperdarker:block/echo_planks", ModTextureMap::janky);
         // Promenade
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_DARK_AMARANTH_BOOKSHELF, "promenade:block/dark_amaranth/planks", ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_MAPLE_BOOKSHELF, "promenade:block/maple/planks", ModTextureMap::janky);

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -13,9 +14,6 @@ import net.xanthian.variantbookshelves.Initialise;
 import net.xanthian.variantbookshelves.block.*;
 
 import java.util.concurrent.CompletableFuture;
-
-import static net.minecraft.registry.tag.BlockTags.AXE_MINEABLE;
-import static net.minecraft.registry.tag.BlockTags.ENCHANTMENT_POWER_PROVIDER;
 
 public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
     public BlockTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -52,6 +50,8 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
                 .addOptional(new Identifier("variantbookshelves:bw_dragons_blood_bookshelf"))
                 .addOptional(new Identifier("variantbookshelves:bw_elder_bookshelf"))
                 .addOptional(new Identifier("variantbookshelves:bw_juniper_bookshelf"))
+
+                .addOptional(new Identifier("variantbookshelves:dad_echo_bookshelf"))
 
                 .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
                 .addOptional(new Identifier("variantbookshelves:prom_maple_bookshelf"))
@@ -97,10 +97,10 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
 
                 .addOptional(new Identifier("variantbookshelves:ldv_cherry_bookshelf"));
 
-        getOrCreateTagBuilder(AXE_MINEABLE)
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .forceAddTag(BOOKSHELVES);
 
-        getOrCreateTagBuilder(ENCHANTMENT_POWER_PROVIDER)
+        getOrCreateTagBuilder(BlockTags.ENCHANTMENT_POWER_PROVIDER)
                 .forceAddTag(BOOKSHELVES);
 
         getOrCreateTagBuilder(C_BOOKSHELF)

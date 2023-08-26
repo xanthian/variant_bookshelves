@@ -50,6 +50,9 @@ public class ModCreativeTab {
                             entries.add(Bewitchment.BW_ELDER_BOOKSHELF);
                             entries.add(Bewitchment.BW_JUNIPER_BOOKSHELF);
                         }
+                        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
+                            entries.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF);
+                        }
                         if (FabricLoader.getInstance().isModLoaded("promenade")) {
                             entries.add(Promenade.PROM_DARK_AMARANTH_BOOKSHELF);
                             entries.add(Promenade.PROM_MAPLE_BOOKSHELF);
