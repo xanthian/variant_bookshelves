@@ -14,6 +14,8 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
@@ -46,22 +48,43 @@ public class RecipeGenerator extends FabricRecipeProvider {
         //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("ad_astra")), AdAstra.AA_AERONOS_BOOKSHELF, Registries.ITEM.get(new Identifier("ad_astra:aeronos_planks")));
         //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("ad_astra")), AdAstra.AA_GLACIAN_BOOKSHELF, Registries.ITEM.get(new Identifier("ad_astra:glacian_planks")));
         //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("ad_astra")), AdAstra.AA_STROPHAR_BOOKSHELF, Registries.ITEM.get(new Identifier("ad_astra:strophar_planks")));
+
         // Beach Party (Lets Do)
         offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("beachparty")), BeachParty.LDBP_PALM_BOOKSHELF, Registries.ITEM.get(new Identifier("beachparty:palm_planks")));
+
         // Better Archeology
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("betterarcheology")), BetterArcheology.BA_ROTTEN_BOOKSHELF, Registries.ITEM.get(new Identifier("betterarcheology:rotten_planks")));
+
         // Bewitchment
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_CYPRESS_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:cypress_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:dragons_blood_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_ELDER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:elder_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:juniper_planks")));
+
         // Deeper & Darker (disabled)
         //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("deeperdarker")),DeeperAndDarker.DAD_ECHO_BOOKSHELF, Registries.ITEM.get(new Identifier("deeperanddarker:echo_planks")));
+
+        // Minecells
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("minecells")), MineCells.MC_PUTRID_BOOKSHELF, Registries.ITEM.get(new Identifier("minecells:putrid_planks")));
+
+        // Natures Spirit (disabled)
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_ASPEN_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:aspen_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_CYPRESS_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:cypress_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_FIR_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:fir_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_JOSHUA_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:joshua_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_MAPLE_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:maple_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_OLIVE_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:olive_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_REDWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:redwood_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_SUGI_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:sugi_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_WILLOW_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:willow_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("natures_spirit")), NaturesSpirit.NS_WISTERIA_BOOKSHELF, Registries.ITEM.get(new Identifier("natures_spirit:wisteria_planks")));
+
         // Promenade
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_DARK_AMARANTH_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:dark_amaranth_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_MAPLE_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:maple_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_PALM_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:palm_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("promenade")), Promenade.PROM_SAKURA_BOOKSHELF, Registries.ITEM.get(new Identifier("promenade:sakura_planks")));
+
         // Regions Unexplored
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:alpha_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_BAOBAB_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:baobab_planks")));
@@ -69,7 +92,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:blackwood_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_BLUE_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:blue_painted_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_BROWN_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:brown_painted_planks")));
-        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_CHERRY_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:cherry_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_CYAN_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:cyan_painted_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_CYPRESS_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:cypress_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_DEAD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:dead_planks")));
@@ -91,14 +113,26 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_PURPLE_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:purple_painted_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_RED_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:red_painted_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_REDWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:redwood_planks")));
-        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:sculkwood_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_WHITE_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:white_painted_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_WILLOW_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:willow_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("regions_unexplored")), RegionsUnexplored.RU_YELLOW_PAINTED_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:yellow_painted_planks")));
+        //0.4.1 (disabled)
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:cherry_planks"))))), RegionsUnexplored.RU_CHERRY_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:cherry_planks")));
+        //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:sculkwood_planks"))))), RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:sculkwood_planks")));
+        //0.5.0
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:brimwood_planks"))))), RegionsUnexplored.RU_BRIMWOOD_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:brimwood_planks")));
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:cobalt_planks"))))), RegionsUnexplored.RU_COBALT_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:cobalt_planks")));
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:kapok_planks"))))), RegionsUnexplored.RU_KAPOK_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:kapok_planks")));
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:magnolia_planks"))))), RegionsUnexplored.RU_MAGNOLIA_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:magnolia_planks")));
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:socotra_planks"))))), RegionsUnexplored.RU_SOCOTRA_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:socotra_planks")));
+        offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded("regions_unexplored"),DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier("regions_unexplored:yellow_bioshroom_planks"))))), RegionsUnexplored.RU_YELLOW_BIOSHROOM_BOOKSHELF, Registries.ITEM.get(new Identifier("regions_unexplored:yellow_bioshroom_planks")));
+
         // SnifferPlus (disabled)
         //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("snifferplus")), SnifferPlus.SP_STONE_PINE_BOOKSHELF, "snifferplus:stone_pine_planks");
+
         // Tech Reborn
         offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("techreborn")), TechReborn.TR_RUBBER_BOOKSHELF, Registries.ITEM.get(new Identifier("techreborn:rubber_planks")));
+
         // Vinery (Lets Do)
         offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("vinery")), Vinery.LDV_CHERRY_BOOKSHELF, Registries.ITEM.get(new Identifier("vinery:cherry_planks")));
 

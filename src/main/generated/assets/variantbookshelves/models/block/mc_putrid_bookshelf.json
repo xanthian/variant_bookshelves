@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "minecells:block/putrid_planks",
+    "east": "variantbookshelves:block/mc_putrid_bookshelf",
+    "north": "variantbookshelves:block/mc_putrid_bookshelf",
+    "particle": "variantbookshelves:block/mc_putrid_bookshelf",
+    "south": "variantbookshelves:block/mc_putrid_bookshelf",
+    "up": "minecells:block/putrid_planks",
+    "west": "variantbookshelves:block/mc_putrid_bookshelf"
+  }
+}

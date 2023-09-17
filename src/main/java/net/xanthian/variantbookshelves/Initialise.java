@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 
+import net.fabricmc.loader.api.ModContainer;
+import net.fabricmc.loader.api.Version;
+import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.minecraft.util.Identifier;
 
 import net.xanthian.variantbookshelves.block.Vanilla;
@@ -22,41 +25,63 @@ public class Initialise implements ModInitializer {
         ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(Initialise.MOD_ID, "3d_bookshelves"),
                 FabricLoader.getInstance().getModContainer(Initialise.MOD_ID).orElseThrow(), ResourcePackActivationType.NORMAL);
 
-
         Vanilla.registerBookshelves();
 
-        if (FabricLoader.getInstance().isModLoaded("ad_astra")) { // DISABLE FOR DATAGEN
-            AdAstra.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("beachparty")) {
-            BeachParty.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("betterarcheology")) {
-            BetterArcheology.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
-            Bewitchment.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("deeperdarker")) { // DISABLE FOR DATAGEN
-            DeeperAndDarker.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("promenade")) {
-            Promenade.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
+        ifModLoaded("ad_astra", AdAstra::registerBookshelves);
+
+        ifModLoaded("beachparty", BeachParty::registerBookshelves);
+
+        ifModLoaded("betterarcheology", BetterArcheology::registerBookshelves);
+
+        ifModLoaded("bewitchment", Bewitchment::registerBookshelves);
+
+        ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
+
+        ifModLoaded("minecells", MineCells::registerBookshelves);
+
+        ifModLoaded("natures_spirit", NaturesSpirit::registerBookshelves);
+
+        ifModLoaded("promenade", Promenade::registerBookshelves);
+
+        ifModLoaded("regions_unexplored", () -> {
             RegionsUnexplored.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("snifferplus")) { // DISABLE FOR DATAGEN
-            SnifferPlus.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("techreborn")) {
-            TechReborn.registerBookshelves();
-        }
-        if (FabricLoader.getInstance().isModLoaded("vinery")) {
-            Vinery.registerBookshelves();
-        }
+            if (isModVersion("regions_unexplored", "0.4")) {
+                RegionsUnexplored.register04Bookshelves();
+            } else {
+                RegionsUnexplored.register05Bookshelves();
+            }
+        });
+
+        ifModLoaded("snifferplus", SnifferPlus::registerBookshelves);
+
+        ifModLoaded("techreborn", TechReborn::registerBookshelves);
+
+        ifModLoaded("vinery", Vinery::registerBookshelves);
 
         ModRegistries.registerFuelandFlammable();
         ModCreativeTab.registerItemGroup();
+
+        // Datagen Block - disable for client run
+        //SnifferPlus.registerBookshelves();
+        //RegionsUnexplored.register04Bookshelves();
+        //NaturesSpirit.registerBookshelves();
+        //DeeperAndDarker.registerBookshelves();
+        //AdAstra.registerBookshelves();
+
+    }
+
+    public static void ifModLoaded(String modId, Runnable runnable) {
+        if (FabricLoader.getInstance().isModLoaded(modId)) {
+            runnable.run();
+        }
+    }
+    public static boolean isModVersion(String modId, String ver) {
+        return FabricLoader.getInstance()
+                .getModContainer(modId)
+                .map(ModContainer::getMetadata)
+                .map(ModMetadata::getVersion)
+                .map(Version::getFriendlyString)
+                .filter(version -> version.startsWith(ver))
+                .isPresent();
     }
 }

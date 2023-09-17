@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/cobalt_planks",
+    "east": "variantbookshelves:block/ru_cobalt_bookshelf",
+    "north": "variantbookshelves:block/ru_cobalt_bookshelf",
+    "particle": "variantbookshelves:block/ru_cobalt_bookshelf",
+    "south": "variantbookshelves:block/ru_cobalt_bookshelf",
+    "up": "regions_unexplored:block/cobalt_planks",
+    "west": "variantbookshelves:block/ru_cobalt_bookshelf"
+  }
+}

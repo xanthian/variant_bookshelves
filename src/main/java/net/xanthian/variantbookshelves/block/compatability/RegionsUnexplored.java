@@ -1,5 +1,6 @@
 package net.xanthian.variantbookshelves.block.compatability;
 
+import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -10,14 +11,18 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.Initialise;
 
+import java.util.Map;
+
 public class RegionsUnexplored {
+
+    public static Map<Identifier, Block> RU_BOOKSHELVES = Maps.newHashMap();
+
     public static Block RU_ALPHA_OAK_BOOKSHELF;
     public static Block RU_BAOBAB_BOOKSHELF;
     public static Block RU_BLACK_PAINTED_BOOKSHELF;
     public static Block RU_BLACKWOOD_BOOKSHELF;
     public static Block RU_BLUE_PAINTED_BOOKSHELF;
     public static Block RU_BROWN_PAINTED_BOOKSHELF;
-    public static Block RU_CHERRY_BOOKSHELF;
     public static Block RU_CYAN_PAINTED_BOOKSHELF;
     public static Block RU_CYPRESS_BOOKSHELF;
     public static Block RU_DEAD_BOOKSHELF;
@@ -39,10 +44,19 @@ public class RegionsUnexplored {
     public static Block RU_PURPLE_PAINTED_BOOKSHELF;
     public static Block RU_REDWOOD_BOOKSHELF;
     public static Block RU_RED_PAINTED_BOOKSHELF;
-    public static Block RU_SCULKWOOD_BOOKSHELF;
     public static Block RU_WHITE_PAINTED_BOOKSHELF;
     public static Block RU_WILLOW_BOOKSHELF;
     public static Block RU_YELLOW_PAINTED_BOOKSHELF;
+
+    public static Block RU_CHERRY_BOOKSHELF;
+    public static Block RU_SCULKWOOD_BOOKSHELF;
+
+    public static Block RU_BRIMWOOD_BOOKSHELF;
+    public static Block RU_COBALT_BOOKSHELF;
+    public static Block RU_KAPOK_BOOKSHELF;
+    public static Block RU_MAGNOLIA_BOOKSHELF;
+    public static Block RU_SOCOTRA_BOOKSHELF;
+    public static Block RU_YELLOW_BIOSHROOM_BOOKSHELF;
 
     public static void registerBookshelves() {
         RU_ALPHA_OAK_BOOKSHELF = registerBookshelf("ru_alpha_oak_bookshelf");
@@ -51,7 +65,6 @@ public class RegionsUnexplored {
         RU_BLACKWOOD_BOOKSHELF = registerBookshelf("ru_blackwood_bookshelf");
         RU_BLUE_PAINTED_BOOKSHELF = registerBookshelf("ru_blue_painted_bookshelf");
         RU_BROWN_PAINTED_BOOKSHELF = registerBookshelf("ru_brown_painted_bookshelf");
-        RU_CHERRY_BOOKSHELF = registerBookshelf("ru_cherry_bookshelf");
         RU_CYAN_PAINTED_BOOKSHELF = registerBookshelf("ru_cyan_painted_bookshelf");
         RU_CYPRESS_BOOKSHELF = registerBookshelf("ru_cypress_bookshelf");
         RU_DEAD_BOOKSHELF = registerBookshelf("ru_dead_bookshelf");
@@ -73,20 +86,34 @@ public class RegionsUnexplored {
         RU_PURPLE_PAINTED_BOOKSHELF = registerBookshelf("ru_purple_painted_bookshelf");
         RU_RED_PAINTED_BOOKSHELF = registerBookshelf("ru_red_painted_bookshelf");
         RU_REDWOOD_BOOKSHELF = registerBookshelf("ru_redwood_bookshelf");
-        RU_SCULKWOOD_BOOKSHELF = registerBookshelf("ru_sculkwood_bookshelf");
         RU_WHITE_PAINTED_BOOKSHELF = registerBookshelf("ru_white_painted_bookshelf");
         RU_WILLOW_BOOKSHELF = registerBookshelf("ru_willow_bookshelf");
         RU_YELLOW_PAINTED_BOOKSHELF = registerBookshelf("ru_yellow_painted_bookshelf");
     }
 
-    public static Block register(String Id, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
+    public static void register04Bookshelves() {
+        RU_CHERRY_BOOKSHELF = registerBookshelf("ru_cherry_bookshelf");
+        RU_SCULKWOOD_BOOKSHELF = registerBookshelf("ru_sculkwood_bookshelf");
+    }
+
+    public static void register05Bookshelves() {
+        RU_BRIMWOOD_BOOKSHELF = registerBookshelf("ru_brimwood_bookshelf");
+        RU_COBALT_BOOKSHELF = registerBookshelf("ru_cobalt_bookshelf");
+        RU_KAPOK_BOOKSHELF = registerBookshelf("ru_kapok_bookshelf");
+        RU_MAGNOLIA_BOOKSHELF = registerBookshelf("ru_magnolia_bookshelf");
+        RU_SOCOTRA_BOOKSHELF = registerBookshelf("ru_socotra_bookshelf");
+        RU_YELLOW_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_yellow_bioshroom_bookshelf");
+    }
+
+    public static Block register(String name, Block block) {
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
         Registry.register(Registries.BLOCK, identifier, block);
+        RU_BOOKSHELVES.put(identifier, block);
         Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
         return block;
     }
 
-    public static Block registerBookshelf(String id) {
-        return register(id, new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF)));
+    public static Block registerBookshelf(String name) {
+        return register(name, new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF)));
     }
 }

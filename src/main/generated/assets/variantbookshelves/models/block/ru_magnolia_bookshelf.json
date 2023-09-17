@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/magnolia_planks",
+    "east": "variantbookshelves:block/ru_magnolia_bookshelf",
+    "north": "variantbookshelves:block/ru_magnolia_bookshelf",
+    "particle": "variantbookshelves:block/ru_magnolia_bookshelf",
+    "south": "variantbookshelves:block/ru_magnolia_bookshelf",
+    "up": "regions_unexplored:block/magnolia_planks",
+    "west": "variantbookshelves:block/ru_magnolia_bookshelf"
+  }
+}

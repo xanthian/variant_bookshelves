@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/kapok_planks",
+    "east": "variantbookshelves:block/ru_kapok_bookshelf",
+    "north": "variantbookshelves:block/ru_kapok_bookshelf",
+    "particle": "variantbookshelves:block/ru_kapok_bookshelf",
+    "south": "variantbookshelves:block/ru_kapok_bookshelf",
+    "up": "regions_unexplored:block/kapok_planks",
+    "west": "variantbookshelves:block/ru_kapok_bookshelf"
+  }
+}

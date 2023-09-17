@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/sugi_planks",
+    "east": "variantbookshelves:block/ns_sugi_bookshelf",
+    "north": "variantbookshelves:block/ns_sugi_bookshelf",
+    "particle": "variantbookshelves:block/ns_sugi_bookshelf",
+    "south": "variantbookshelves:block/ns_sugi_bookshelf",
+    "up": "natures_spirit:block/sugi_planks",
+    "west": "variantbookshelves:block/ns_sugi_bookshelf"
+  }
+}

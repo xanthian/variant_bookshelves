@@ -21,7 +21,7 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         super(output, registriesFuture);
     }
 
-    private static final TagKey<Item> C_BOOKSHELF = TagKey.of(Registries.ITEM.getKey(), new Identifier("c:bookshelves"));
+    private static final TagKey<Item> C_BOOKSHELVES = TagKey.of(Registries.ITEM.getKey(), new Identifier("c:bookshelves"));
 
         @Override
         protected void configure (RegistryWrapper.WrapperLookup arg){
@@ -52,6 +52,19 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
                     .addOptional(new Identifier("variantbookshelves:bw_juniper_bookshelf"))
 
                     .addOptional(new Identifier("variantbookshelves:dad_echo_bookshelf"))
+
+                    .addOptional(new Identifier("variantbookshelves:mc_putrid_bookshelf"))
+
+                    .addOptional(new Identifier("variantbookshelves:ns_aspen_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_cypress_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_fir_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_joshua_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_maple_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_olive_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_redwood_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_sugi_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_willow_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ns_wisteria_bookshelf"))
 
                     .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:prom_maple_bookshelf"))
@@ -90,6 +103,12 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
                     .addOptional(new Identifier("variantbookshelves:ru_white_painted_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:ru_willow_bookshelf"))
                     .addOptional(new Identifier("variantbookshelves:ru_yellow_painted_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_brimwood_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_cobalt_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_kapok_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_magnolia_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_socotra_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_yellow_bioshroom_bookshelf"))
 
                     .addOptional(new Identifier("variantbookshelves:sp_stone_pine_bookshelf"))
 
@@ -99,9 +118,14 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
             getOrCreateTagBuilder(ItemTags.NON_FLAMMABLE_WOOD)
                     .add(Vanilla.CRIMSON_BOOKSHELF.asItem())
-                    .add(Vanilla.WARPED_BOOKSHELF.asItem());
+                    .add(Vanilla.WARPED_BOOKSHELF.asItem())
+                    .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_brimwood_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_cobalt_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_dead_bookshelf"))
+                    .addOptional(new Identifier("variantbookshelves:ru_yellow_bioshroom_bookshelf"));
 
-            getOrCreateTagBuilder(C_BOOKSHELF)
+            getOrCreateTagBuilder(C_BOOKSHELVES)
                     .forceAddTag(BOOKSHELVES);
 
         }

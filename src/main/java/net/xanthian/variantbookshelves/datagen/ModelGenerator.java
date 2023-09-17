@@ -34,26 +34,47 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerCubeWithCustomTextures(Vanilla.CRIMSON_BOOKSHELF, Blocks.CRIMSON_PLANKS, ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Vanilla.WARPED_BOOKSHELF, Blocks.WARPED_PLANKS, ModTextureMap::endside);
 
-        // Ad Astra (disabled)
+        // Ad Astra
         registerNonStandardCube(blockStateModelGenerator, AdAstra.AA_AERONOS_BOOKSHELF,"ad_astra:block/aeronos_planks",ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator, AdAstra.AA_GLACIAN_BOOKSHELF,"ad_astra:block/glacian_planks",ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator, AdAstra.AA_STROPHAR_BOOKSHELF,"ad_astra:block/strophar_planks",ModTextureMap::janky);
+
         // Beach Party (Lets Do)
         registerNonStandardCube(blockStateModelGenerator,BeachParty.LDBP_PALM_BOOKSHELF,"beachparty:block/palm_planks0",ModTextureMap::janky);
+
         // Better Archeology
         blockStateModelGenerator.registerCubeWithCustomTextures(BetterArcheology.BA_ROTTEN_BOOKSHELF, Registries.BLOCK.get(new Identifier("betterarcheology:rotten_planks")), ModTextureMap::endside);
+
         // Bewitchment
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_CYPRESS_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:cypress_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:dragons_blood_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_ELDER_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:elder_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.BLOCK.get(new Identifier("bewitchment:juniper_planks")), ModTextureMap::endside);
+
         // Deeper & Darker
         registerNonStandardCube(blockStateModelGenerator,DeeperAndDarker.DAD_ECHO_BOOKSHELF,  "deeperdarker:block/echo_planks", ModTextureMap::janky);
+
+        // Mine Cells
+        blockStateModelGenerator.registerCubeWithCustomTextures(MineCells.MC_PUTRID_BOOKSHELF, Registries.BLOCK.get(new Identifier("minecells:putrid_planks")), ModTextureMap::endside);
+
+        // Natures Spirit
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_ASPEN_BOOKSHELF,  "natures_spirit:block/aspen_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_CYPRESS_BOOKSHELF,  "natures_spirit:block/cypress_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_FIR_BOOKSHELF,  "natures_spirit:block/fir_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_JOSHUA_BOOKSHELF,  "natures_spirit:block/joshua_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_MAPLE_BOOKSHELF,  "natures_spirit:block/maple_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_OLIVE_BOOKSHELF,  "natures_spirit:block/olive_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_REDWOOD_BOOKSHELF,  "natures_spirit:block/redwood_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_SUGI_BOOKSHELF,  "natures_spirit:block/sugi_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_WILLOW_BOOKSHELF,  "natures_spirit:block/willow_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator,NaturesSpirit.NS_WISTERIA_BOOKSHELF,  "natures_spirit:block/wisteria_planks", ModTextureMap::janky);
+
         // Promenade
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_DARK_AMARANTH_BOOKSHELF, "promenade:block/dark_amaranth/planks", ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_MAPLE_BOOKSHELF, "promenade:block/maple/planks", ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_PALM_BOOKSHELF, "promenade:block/palm/planks", ModTextureMap::janky);
         registerNonStandardCube(blockStateModelGenerator,Promenade.PROM_SAKURA_BOOKSHELF, "promenade:block/sakura/planks", ModTextureMap::janky);
+
         // Regions Unexplored
         registerNonStandardCube(blockStateModelGenerator,RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF,"regions_unexplored:block/alpha_oak_planks",ModTextureMap::janky);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_BAOBAB_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:baobab_planks")), ModTextureMap::endside);
@@ -61,7 +82,6 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:blackwood_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_BLUE_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:blue_painted_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_BROWN_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:brown_painted_planks")), ModTextureMap::endside);
-        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_CHERRY_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:cherry_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_CYAN_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:cyan_painted_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_CYPRESS_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:cypress_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_DEAD_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:dead_planks")), ModTextureMap::endside);
@@ -83,14 +103,24 @@ public class ModelGenerator extends FabricModelProvider {
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_PURPLE_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:purple_painted_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_RED_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:red_painted_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_REDWOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:redwood_planks")), ModTextureMap::endside);
-        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:sculkwood_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_WHITE_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:white_painted_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_WILLOW_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:willow_planks")), ModTextureMap::endside);
         blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_YELLOW_PAINTED_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:yellow_painted_planks")), ModTextureMap::endside);
+        registerNonStandardCube(blockStateModelGenerator, RegionsUnexplored.RU_CHERRY_BOOKSHELF, "regions_unexplored:block/cherry_planks", ModTextureMap::janky);
+        registerNonStandardCube(blockStateModelGenerator, RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, "regions_unexplored:block/sculkwood_planks", ModTextureMap::janky);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_BRIMWOOD_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:brimwood_planks")), ModTextureMap::endside);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_COBALT_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:cobalt_planks")), ModTextureMap::endside);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_KAPOK_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:kapok_planks")), ModTextureMap::endside);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_MAGNOLIA_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:magnolia_planks")), ModTextureMap::endside);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_SOCOTRA_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:socotra_planks")), ModTextureMap::endside);
+        blockStateModelGenerator.registerCubeWithCustomTextures(RegionsUnexplored.RU_YELLOW_BIOSHROOM_BOOKSHELF, Registries.BLOCK.get(new Identifier("regions_unexplored:yellow_bioshroom_planks")), ModTextureMap::endside);
+
         // SnifferPlus (disabled)
         registerNonStandardCube(blockStateModelGenerator,SnifferPlus.SP_STONE_PINE_BOOKSHELF, "snifferplus:block/stone_pine_planks", ModTextureMap::janky);
+
         // Tech Reborn
         blockStateModelGenerator.registerCubeWithCustomTextures(TechReborn.TR_RUBBER_BOOKSHELF, Registries.BLOCK.get(new Identifier("techreborn:rubber_planks")), ModTextureMap::endside);
+
         // Vinery (Lets Do)
         blockStateModelGenerator.registerCubeWithCustomTextures(Vinery.LDV_CHERRY_BOOKSHELF, Registries.BLOCK.get(new Identifier("vinery:cherry_planks")), ModTextureMap::endside);
     }

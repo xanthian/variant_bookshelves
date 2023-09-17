@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/fir_planks",
+    "east": "variantbookshelves:block/ns_fir_bookshelf",
+    "north": "variantbookshelves:block/ns_fir_bookshelf",
+    "particle": "variantbookshelves:block/ns_fir_bookshelf",
+    "south": "variantbookshelves:block/ns_fir_bookshelf",
+    "up": "natures_spirit:block/fir_planks",
+    "west": "variantbookshelves:block/ns_fir_bookshelf"
+  }
+}

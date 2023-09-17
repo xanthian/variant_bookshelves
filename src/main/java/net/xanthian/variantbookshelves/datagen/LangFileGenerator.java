@@ -31,22 +31,43 @@ public class LangFileGenerator extends FabricLanguageProvider {
         translationBuilder.add(AdAstra.AA_AERONOS_BOOKSHELF, "Aeronos Bookshelf");
         translationBuilder.add(AdAstra.AA_GLACIAN_BOOKSHELF, "Glacian Bookshelf");
         translationBuilder.add(AdAstra.AA_STROPHAR_BOOKSHELF, "Strophar Bookshelf");
+        
         // Beach Party (Lets Do)
         translationBuilder.add(BeachParty.LDBP_PALM_BOOKSHELF, "Palm Bookshelf");
+        
         // Better Archeology
         translationBuilder.add(BetterArcheology.BA_ROTTEN_BOOKSHELF, "Rotten Bookshelf");
+        
         // Bewitchment
         translationBuilder.add(Bewitchment.BW_CYPRESS_BOOKSHELF, "Cypress Bookshelf");
         translationBuilder.add(Bewitchment.BW_DRAGONS_BLOOD_BOOKSHELF, "Dragon's Blood Bookshelf");
         translationBuilder.add(Bewitchment.BW_ELDER_BOOKSHELF, "Elder Bookshelf");
         translationBuilder.add(Bewitchment.BW_JUNIPER_BOOKSHELF, "Juniper Bookshelf");
+        
         // Deeper & Darker
         translationBuilder.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, "Echo Bookshelf");
+
+        // MineCells
+        translationBuilder.add(MineCells.MC_PUTRID_BOOKSHELF, "Putrid Bookshelf");
+
+        // Natures Spirit
+        translationBuilder.add(NaturesSpirit.NS_ASPEN_BOOKSHELF, "Aspen Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_CYPRESS_BOOKSHELF,"Cypress Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_FIR_BOOKSHELF,"Fir Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_JOSHUA_BOOKSHELF,"Joshua Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_MAPLE_BOOKSHELF, "Maple Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_OLIVE_BOOKSHELF, "Olive Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_REDWOOD_BOOKSHELF, "Redwood Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_SUGI_BOOKSHELF, "Sugi Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_WILLOW_BOOKSHELF, "Willow Bookshelf");
+        translationBuilder.add(NaturesSpirit.NS_WISTERIA_BOOKSHELF, "Wisteria Bookshelf");
+        
         // Promenade
         translationBuilder.add(Promenade.PROM_DARK_AMARANTH_BOOKSHELF, "Dark Amaranth Bookshelf");
         translationBuilder.add(Promenade.PROM_MAPLE_BOOKSHELF, "Maple Bookshelf");
         translationBuilder.add(Promenade.PROM_PALM_BOOKSHELF, "Palm Bookshelf");
         translationBuilder.add(Promenade.PROM_SAKURA_BOOKSHELF, "Sakura Bookshelf");
+        
         // Regions Unexplored
         translationBuilder.add(RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF, "Alpha Oak Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_BAOBAB_BOOKSHELF,"Baobab Bookshelf");
@@ -54,7 +75,6 @@ public class LangFileGenerator extends FabricLanguageProvider {
         translationBuilder.add(RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF,"Blackwood Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_BLUE_PAINTED_BOOKSHELF, "Blue Painted Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_BROWN_PAINTED_BOOKSHELF, "Brown Painted Bookshelf");
-        translationBuilder.add(RegionsUnexplored.RU_CHERRY_BOOKSHELF, "Cherry Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_CYAN_PAINTED_BOOKSHELF, "Cyan Painted Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_CYPRESS_BOOKSHELF, "Cypress Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_DEAD_BOOKSHELF, "Dead Bookshelf");
@@ -76,14 +96,24 @@ public class LangFileGenerator extends FabricLanguageProvider {
         translationBuilder.add(RegionsUnexplored.RU_PURPLE_PAINTED_BOOKSHELF, "Purple Painted Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_REDWOOD_BOOKSHELF, "Redwood Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_RED_PAINTED_BOOKSHELF, "Red Painted Bookshelf");
-        translationBuilder.add(RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, "Sculkwood Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_WHITE_PAINTED_BOOKSHELF, "White Painted Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_WILLOW_BOOKSHELF, "Willow Bookshelf");
         translationBuilder.add(RegionsUnexplored.RU_YELLOW_PAINTED_BOOKSHELF, "Yellow Painted Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_CHERRY_BOOKSHELF, "Cherry Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF, "Sculkwood Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_BRIMWOOD_BOOKSHELF, "Brimwood Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_COBALT_BOOKSHELF, "Cobalt Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_KAPOK_BOOKSHELF, "Kapok Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_MAGNOLIA_BOOKSHELF, "Magnolia Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_SOCOTRA_BOOKSHELF, "Socotra Bookshelf");
+            translationBuilder.add(RegionsUnexplored.RU_YELLOW_BIOSHROOM_BOOKSHELF, "Yellow Bioshroom Bookshelf");
+        
         // SnifferPlus
         translationBuilder.add(SnifferPlus.SP_STONE_PINE_BOOKSHELF, "Stone Pine Bookshelf");
+        
         // Tech Reborn
         translationBuilder.add(TechReborn.TR_RUBBER_BOOKSHELF, "Rubber Bookshelf");
+        
         // Vinery
         translationBuilder.add(Vinery.LDV_CHERRY_BOOKSHELF,"Cherry Bookshelf");
     }

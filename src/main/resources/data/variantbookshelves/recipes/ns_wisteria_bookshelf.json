@@ -3,7 +3,7 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "regions_unexplored"
+        "natures_spirit"
       ]
     }
   ],
@@ -11,7 +11,7 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "regions_unexplored:sculkwood_planks"
+      "item": "natures_spirit:wisteria_planks"
     },
     "X": {
       "item": "minecraft:book"
@@ -23,7 +23,7 @@
     "###"
   ],
   "result": {
-    "item": "variantbookshelves:ru_sculkwood_bookshelf"
+    "item": "variantbookshelves:ns_wisteria_bookshelf"
   },
   "show_notification": true
 }

@@ -17,14 +17,14 @@ public class BetterArcheology {
         BA_ROTTEN_BOOKSHELF = registerBookshelf("ba_rotten_bookshelf");
     }
 
-    public static Block register(String Id, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
+    public static Block register(String name, Block block) {
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
         Registry.register(Registries.BLOCK, identifier, block);
         Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
         return block;
     }
 
-    public static Block registerBookshelf(String id) {
-        return register(id, new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF)));
+    public static Block registerBookshelf(String name) {
+        return register(name, new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF)));
     }
 }

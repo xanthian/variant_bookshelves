@@ -1,5 +1,6 @@
 package net.xanthian.variantbookshelves.block;
 
+import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -16,7 +17,11 @@ import net.minecraft.util.Identifier;
 
 import net.xanthian.variantbookshelves.Initialise;
 
+import java.util.Map;
+
 public class Vanilla {
+
+    public static Map<Identifier, Block> MOD_BOOKSHELVES = Maps.newHashMap();
 
     public static final Block ACACIA_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
@@ -42,9 +47,10 @@ public class Vanilla {
         registerBookshelfBlock("warped_bookshelf", WARPED_BOOKSHELF);
     }
 
-    private static void registerBookshelfBlock(String Id, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, Id.toLowerCase());
+    private static void registerBookshelfBlock(String name, Block block) {
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
         Registry.register(Registries.BLOCK, identifier, block);
         Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
+        MOD_BOOKSHELVES.put(identifier, block);
     }
 }

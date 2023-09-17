@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/olive_planks",
+    "east": "variantbookshelves:block/ns_olive_bookshelf",
+    "north": "variantbookshelves:block/ns_olive_bookshelf",
+    "particle": "variantbookshelves:block/ns_olive_bookshelf",
+    "south": "variantbookshelves:block/ns_olive_bookshelf",
+    "up": "natures_spirit:block/olive_planks",
+    "west": "variantbookshelves:block/ns_olive_bookshelf"
+  }
+}

@@ -3,7 +3,7 @@
     {
       "condition": "fabric:all_mods_loaded",
       "values": [
-        "regions_unexplored"
+        "natures_spirit"
       ]
     }
   ],
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "variantbookshelves:ru_sculkwood_bookshelf"
+        "recipe": "variantbookshelves:ns_olive_bookshelf"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -36,7 +36,7 @@
   ],
   "rewards": {
     "recipes": [
-      "variantbookshelves:ru_sculkwood_bookshelf"
+      "variantbookshelves:ns_olive_bookshelf"
     ]
   },
   "sends_telemetry_event": false

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/joshua_planks",
+    "east": "variantbookshelves:block/ns_joshua_bookshelf",
+    "north": "variantbookshelves:block/ns_joshua_bookshelf",
+    "particle": "variantbookshelves:block/ns_joshua_bookshelf",
+    "south": "variantbookshelves:block/ns_joshua_bookshelf",
+    "up": "natures_spirit:block/joshua_planks",
+    "west": "variantbookshelves:block/ns_joshua_bookshelf"
+  }
+}
