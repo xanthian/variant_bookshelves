@@ -6,10 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
-import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.VanillaRecipeProvider;
+import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -23,15 +20,13 @@ import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 import net.xanthian.variantbookshelves.util.ModItemTags;
 
-import java.util.function.Consumer;
-
 public class RecipeGenerator extends FabricRecipeProvider {
     public RecipeGenerator(FabricDataOutput output) {
         super(output);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
         offerBookshelfRecipe(exporter, Vanilla.ACACIA_BOOKSHELF, Items.ACACIA_PLANKS);
         offerBookshelfRecipe(exporter, Vanilla.BAMBOO_BOOKSHELF, Items.BAMBOO_PLANKS);
@@ -151,7 +146,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter);
     }
 
-    public static void offerBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible bookshelf, ItemConvertible planks) {
+    public static void offerBookshelfRecipe(RecipeExporter exporter, ItemConvertible bookshelf, ItemConvertible planks) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, bookshelf)
                 .input('#', planks)
                 .input('X', Items.BOOK)
