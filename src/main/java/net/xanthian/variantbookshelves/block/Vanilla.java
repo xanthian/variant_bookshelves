@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class Vanilla {
 
-    public static Map<Identifier, Block> MOD_BOOKSHELVES = Maps.newHashMap();
+    public static Map<Identifier, Block> VANILLA_BOOKSHELVES = Maps.newHashMap();
 
     public static final Block ACACIA_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
@@ -51,6 +51,6 @@ public class Vanilla {
         Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
         Registry.register(Registries.BLOCK, identifier, block);
         Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
-        MOD_BOOKSHELVES.put(identifier, block);
+        VANILLA_BOOKSHELVES.put(identifier, block);
     }
 }

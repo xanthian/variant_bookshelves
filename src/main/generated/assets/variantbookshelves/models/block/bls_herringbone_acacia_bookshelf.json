@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "blockus:block/herringbone_acacia_planks",
+    "east": "variantbookshelves:block/bls_herringbone_acacia_bookshelf",
+    "north": "variantbookshelves:block/bls_herringbone_acacia_bookshelf",
+    "particle": "variantbookshelves:block/bls_herringbone_acacia_bookshelf",
+    "south": "variantbookshelves:block/bls_herringbone_acacia_bookshelf",
+    "up": "blockus:block/herringbone_acacia_planks",
+    "west": "variantbookshelves:block/bls_herringbone_acacia_bookshelf"
+  }
+}

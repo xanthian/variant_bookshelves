@@ -61,8 +61,31 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_ELDER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:elder_planks")));
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:juniper_planks")));
 
+        // Blockus
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_CHARRED_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:charred_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_ACACIA_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_acacia_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_BAMBOO_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_bamboo_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_BIRCH_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_birch_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_CHARRED_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_charred_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_CHERRY_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_cherry_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_CRIMSON_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_crimson_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_DARK_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_dark_oak_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_JUNGLE_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_jungle_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_MANGROVE_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_mangrove_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_oak_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_RAW_BAMBOO_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_raw_bamboo_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_SPRUCE_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_spruce_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_WARPED_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_warped_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_HERRINGBONE_WHITE_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:herringbone_white_oak_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_RAW_BAMBOO_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:raw_bamboo_planks")));
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_WHITE_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:white_oak_planks")));
+
+
         // Deeper & Darker (disabled)
         //offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("deeperdarker")),DeeperAndDarker.DAD_ECHO_BOOKSHELF, Registries.ITEM.get(new Identifier("deeperanddarker:echo_planks")));
+
+        // Eldritch End
+        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("eldritch_end")), EldritchEnd.EE_PRIMORDIAL_BOOKSHELF, Registries.ITEM.get(new Identifier("eldritch_end:primordial_planks")));
 
         // Minecells
         offerBookshelfRecipe(withConditions(exporter,DefaultResourceConditions.allModsLoaded("minecells")), MineCells.MC_PUTRID_BOOKSHELF, Registries.ITEM.get(new Identifier("minecells:putrid_planks")));

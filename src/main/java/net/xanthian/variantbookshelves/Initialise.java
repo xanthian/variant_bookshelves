@@ -4,20 +4,34 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
-
 import net.fabricmc.loader.api.ModContainer;
 import net.fabricmc.loader.api.Version;
 import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.variantbookshelves.block.Vanilla;
+import net.xanthian.variantbookshelves.block.compatability.*;
 import net.xanthian.variantbookshelves.util.ModCreativeTab;
 import net.xanthian.variantbookshelves.util.ModRegistries;
-import net.xanthian.variantbookshelves.block.compatability.*;
 
 public class Initialise implements ModInitializer {
 
     public static final String MOD_ID = "variantbookshelves";
+
+    public static void ifModLoaded(String modId, Runnable runnable) {
+        if (FabricLoader.getInstance().isModLoaded(modId)) {
+            runnable.run();
+        }
+    }
+
+    public static boolean isModVersion(String modId, String ver) {
+        return FabricLoader.getInstance()
+                .getModContainer(modId)
+                .map(ModContainer::getMetadata)
+                .map(ModMetadata::getVersion)
+                .map(Version::getFriendlyString)
+                .filter(version -> version.startsWith(ver))
+                .isPresent();
+    }
 
     @Override
     public void onInitialize() {
@@ -35,7 +49,11 @@ public class Initialise implements ModInitializer {
 
         ifModLoaded("bewitchment", Bewitchment::registerBookshelves);
 
+        ifModLoaded("blockus", Blockus::registerBookshelves);
+
         ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
+
+        ifModLoaded("eldritch_end", EldritchEnd::registerBookshelves);
 
         ifModLoaded("minecells", MineCells::registerBookshelves);
 
@@ -68,20 +86,5 @@ public class Initialise implements ModInitializer {
         //DeeperAndDarker.registerBookshelves();
         //AdAstra.registerBookshelves();
 
-    }
-
-    public static void ifModLoaded(String modId, Runnable runnable) {
-        if (FabricLoader.getInstance().isModLoaded(modId)) {
-            runnable.run();
-        }
-    }
-    public static boolean isModVersion(String modId, String ver) {
-        return FabricLoader.getInstance()
-                .getModContainer(modId)
-                .map(ModContainer::getMetadata)
-                .map(ModMetadata::getVersion)
-                .map(Version::getFriendlyString)
-                .filter(version -> version.startsWith(ver))
-                .isPresent();
     }
 }

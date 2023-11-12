@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "blockus:block/herringbone_white_oak_planks",
+    "east": "variantbookshelves:block/bls_herringbone_white_oak_bookshelf",
+    "north": "variantbookshelves:block/bls_herringbone_white_oak_bookshelf",
+    "particle": "variantbookshelves:block/bls_herringbone_white_oak_bookshelf",
+    "south": "variantbookshelves:block/bls_herringbone_white_oak_bookshelf",
+    "up": "blockus:block/herringbone_white_oak_planks",
+    "west": "variantbookshelves:block/bls_herringbone_white_oak_bookshelf"
+  }
+}

@@ -7,7 +7,7 @@ import net.minecraft.util.Identifier;
 
 public class ModTextureMap extends TextureMap {
 
-    // Datagen for the Bookshelf models
+    // Datagen for the Vanilla Bookshelf models
     public static TextureMap endside(Block neswBlock, Block updownBlock) {
         return (new ModTextureMap())
                 .put(TextureKey.PARTICLE, getId(neswBlock))
@@ -18,8 +18,8 @@ public class ModTextureMap extends TextureMap {
                 .put(TextureKey.EAST, getId(neswBlock))
                 .put(TextureKey.WEST, getId(neswBlock));
     }
-    // Used for those mods that cant follow a standard _planks naming convention or those that don't load via gradle.
-    public static TextureMap janky(Block neswBlock, String updownBlock) {
+
+    public static TextureMap bookshelf(Block neswBlock, String updownBlock) {
         return (new ModTextureMap())
                 .put(TextureKey.PARTICLE, getId(neswBlock))
                 .put(TextureKey.DOWN, new Identifier(updownBlock))

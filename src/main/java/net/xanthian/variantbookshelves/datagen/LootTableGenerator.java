@@ -2,19 +2,15 @@ package net.xanthian.variantbookshelves.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.resource.conditions.v1.ConditionJsonProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
-import net.fabricmc.fabric.impl.datagen.FabricDataGenHelper;
-
 import net.minecraft.block.Block;
 import net.minecraft.item.Items;
-import net.minecraft.loot.LootTable;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
-
+import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 
-import java.util.List;
+import java.util.Map;
 
 public class LootTableGenerator extends FabricBlockLootTableProvider {
     public LootTableGenerator(FabricDataOutput dataOutput) {
@@ -24,60 +20,38 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
 
-        for (Block bookshelf : Vanilla.MOD_BOOKSHELVES.values()) {
-            addDrop(bookshelf,(Block block) -> this.drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
+        for (Block block : Vanilla.VANILLA_BOOKSHELVES.values()) {
+            addDrop(block, drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
         }
 
-        // Ad Astra
-        for (Block bookshelf : AdAstra.AA_BOOKSHELVES.values()) {
-            addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("ad_astra"))));
-        }
+        registerLootTables(AdAstra.AA_BOOKSHELVES, "ad_astra");
+        registerLootTables(BeachParty.LDBP_BOOKSHELVES, "beachparty");
+        registerLootTables(BetterArcheology.BA_BOOKSHELVES, "betterarcheology");
+        registerLootTables(Bewitchment.BW_BOOKSHELVES, "bewitchment");
+        registerLootTables(Blockus.BLS_BOOKSHELVES, "blockus");
+        registerLootTables(DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker");
+        registerLootTables(EldritchEnd.EE_BOOKSHELVES, "eldritch_end");
+        registerLootTables(MineCells.MC_BOOKSHELVES, "minecells");
+        registerLootTables(NaturesSpirit.NS_BOOKSHELVES, "natures_spirit");
+        registerLootTables(Promenade.PROM_BOOKSHELVES, "promenade");
+        registerLootTables(RegionsUnexplored.RU_BOOKSHELVES, "regions_unexplored");
+        registerLootTables(SnifferPlus.SP_BOOKSHELVES, "snifferplus");
+        registerLootTables(TechReborn.TR_BOOKSHELVES, "techreborn");
+        registerLootTables(Vinery.LDV_BOOKSHELVES, "vinery");
+
+
+        //addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("ad_astra"))));
+
 
         // Beach Party (Lets Do)
-        addDrop(BeachParty.LDBP_PALM_BOOKSHELF, addConditions(drops(BeachParty.LDBP_PALM_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("beachparty"))));
+        //addDrop(BeachParty.LDBP_PALM_BOOKSHELF, addConditions(drops(BeachParty.LDBP_PALM_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("beachparty"))));
 
-        // Better Archeology
-        addDrop(BetterArcheology.BA_ROTTEN_BOOKSHELF, addConditions(drops(BetterArcheology.BA_ROTTEN_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("betterarcheology"))));
-
-        // Bewitchment
-        for (Block bookshelf : Bewitchment.BW_BOOKSHELVES.values()) {
-            addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("bewitchment"))));
-        }
-
-        // Deeper & Darker
-        addDrop(DeeperAndDarker.DAD_ECHO_BOOKSHELF, addConditions(drops(DeeperAndDarker.DAD_ECHO_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("deeperdarker"))));
-
-        // Mine Cells
-        addDrop(MineCells.MC_PUTRID_BOOKSHELF, addConditions(drops(MineCells.MC_PUTRID_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("minecells"))));
-
-        // Natures Spirit
-        for (Block bookshelf : NaturesSpirit.NS_BOOKSHELVES.values()) {
-            addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("natures_spirit"))));
-        }
-
-        // Promenade
-        for (Block bookshelf : Promenade.PROM_BOOKSHELVES.values()) {
-            addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("promenade"))));
-        }
-
-        // Regions Unexplored
-        for (Block bookshelf : RegionsUnexplored.RU_BOOKSHELVES.values()) {
-            addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("regions_unexplored"))));
-        }
-
-        // SnifferPlus
-        addDrop(SnifferPlus.SP_STONE_PINE_BOOKSHELF, addConditions(drops(SnifferPlus.SP_STONE_PINE_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("snifferplus"))));
-
-        // Tech reborn
-        addDrop(TechReborn.TR_RUBBER_BOOKSHELF, addConditions(drops(TechReborn.TR_RUBBER_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("techreborn"))));
-
-        // Vinery (Lets Do)
-        addDrop(Vinery.LDV_CHERRY_BOOKSHELF, addConditions(drops(Vinery.LDV_CHERRY_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("vinery"))));
 
     }
-    private LootTable.Builder addConditions(LootTable.Builder builder, List<ConditionJsonProvider> conditions) {
-        if (!conditions.isEmpty())
-            FabricDataGenHelper.addConditions(builder, conditions.toArray(ConditionJsonProvider[]::new));
-        return builder;
+
+    private void registerLootTables(Map<Identifier, Block> blockMap, String modId) {
+        for (Block bookshelf : blockMap.values()) {
+            withConditions(DefaultResourceConditions.allModsLoaded(modId)).addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
+        }
     }
 }

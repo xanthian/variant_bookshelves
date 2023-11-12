@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "blockus:block/raw_bamboo_planks",
+    "east": "variantbookshelves:block/bls_raw_bamboo_bookshelf",
+    "north": "variantbookshelves:block/bls_raw_bamboo_bookshelf",
+    "particle": "variantbookshelves:block/bls_raw_bamboo_bookshelf",
+    "south": "variantbookshelves:block/bls_raw_bamboo_bookshelf",
+    "up": "blockus:block/raw_bamboo_planks",
+    "west": "variantbookshelves:block/bls_raw_bamboo_bookshelf"
+  }
+}

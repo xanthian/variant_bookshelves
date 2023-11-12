@@ -142,8 +142,27 @@ public class ModRegistries {
                 registry.add(block, 300);
             }
         }
+        if (FabricLoader.getInstance().isModLoaded("blockus")) {
+            registry.add(Blockus.BLS_HERRINGBONE_ACACIA_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_BAMBOO_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_BIRCH_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_CHARRED_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_CHERRY_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_DARK_OAK_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_JUNGLE_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_MANGROVE_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_OAK_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_RAW_BAMBOO_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_SPRUCE_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_HERRINGBONE_WHITE_OAK_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_RAW_BAMBOO_BOOKSHELF, 300);
+            registry.add(Blockus.BLS_WHITE_OAK_BOOKSHELF, 300);
+        }
         if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
             registry.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, 300);
+        }
+        if (FabricLoader.getInstance().isModLoaded("eldritch_end")) {
+            registry.add(EldritchEnd.EE_PRIMORDIAL_BOOKSHELF, 300);
         }
         if (FabricLoader.getInstance().isModLoaded("minecells")) {
             registry.add(MineCells.MC_PUTRID_BOOKSHELF, 300);

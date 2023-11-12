@@ -1,16 +1,46 @@
 {
   "replace": false,
   "values": [
-    "variantbookshelves:acacia_bookshelf",
-    "variantbookshelves:bamboo_bookshelf",
-    "variantbookshelves:birch_bookshelf",
-    "variantbookshelves:cherry_bookshelf",
-    "variantbookshelves:crimson_bookshelf",
-    "variantbookshelves:dark_oak_bookshelf",
-    "variantbookshelves:jungle_bookshelf",
-    "variantbookshelves:mangrove_bookshelf",
-    "variantbookshelves:spruce_bookshelf",
-    "variantbookshelves:warped_bookshelf",
+    {
+      "id": "variantbookshelves:acacia_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bamboo_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:crimson_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:cherry_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:mangrove_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:dark_oak_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:jungle_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:birch_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:spruce_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:warped_bookshelf",
+      "required": false
+    },
     {
       "id": "variantbookshelves:aa_aeronos_bookshelf",
       "required": false
@@ -20,7 +50,7 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:aa_stropar_bookshelf",
+      "id": "variantbookshelves:aa_strophar_bookshelf",
       "required": false
     },
     {
@@ -32,14 +62,6 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:bw_cypress_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:bw_dragons_blood_bookshelf",
-      "required": false
-    },
-    {
       "id": "variantbookshelves:bw_elder_bookshelf",
       "required": false
     },
@@ -48,11 +70,111 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:bw_dragons_blood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bw_cypress_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_charred_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_bamboo_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_oak_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_mangrove_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_warped_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_birch_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_raw_bamboo_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_cherry_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_white_oak_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_charred_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_acacia_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_raw_bamboo_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_dark_oak_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_jungle_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_spruce_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_crimson_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_white_oak_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:dad_echo_bookshelf",
       "required": false
     },
     {
+      "id": "variantbookshelves:ee_primordial_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:mc_putrid_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_olive_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_sugi_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_redwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_willow_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_maple_bookshelf",
       "required": false
     },
     {
@@ -64,31 +186,7 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ns_fir_bookshelf",
-      "required": false
-    },
-    {
       "id": "variantbookshelves:ns_joshua_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ns_maple_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ns_olive_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ns_redwood_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ns_sugi_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ns_willow_bookshelf",
       "required": false
     },
     {
@@ -96,11 +194,11 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:prom_dark_amaranth_bookshelf",
+      "id": "variantbookshelves:ns_fir_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:prom_maple_bookshelf",
+      "id": "variantbookshelves:prom_dark_amaranth_bookshelf",
       "required": false
     },
     {
@@ -108,75 +206,31 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:prom_maple_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:prom_sakura_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_alpha_oak_bookshelf",
+      "id": "variantbookshelves:ru_redwood_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_baobab_bookshelf",
+      "id": "variantbookshelves:ru_orange_painted_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_black_painted_bookshelf",
+      "id": "variantbookshelves:ru_pink_painted_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_blackwood_bookshelf",
+      "id": "variantbookshelves:ru_white_painted_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_blue_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_brown_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_cherry_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_cyan_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_cypress_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_dead_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_eucalyptus_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_green_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_gray_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_joshua_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_larch_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_light_blue_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_light_gray_painted_bookshelf",
+      "id": "variantbookshelves:ru_red_painted_bookshelf",
       "required": false
     },
     {
@@ -188,51 +242,31 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:ru_brown_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_eucalyptus_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:ru_maple_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_mauve_bookshelf",
+      "id": "variantbookshelves:ru_larch_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_orange_painted_bookshelf",
+      "id": "variantbookshelves:ru_light_gray_painted_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_palm_bookshelf",
+      "id": "variantbookshelves:ru_alpha_oak_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_pine_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_pink_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_purple_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_red_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_redwood_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_sculkwood_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_white_painted_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_willow_bookshelf",
+      "id": "variantbookshelves:ru_cyan_painted_bookshelf",
       "required": false
     },
     {
@@ -240,19 +274,47 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_brimwood_bookshelf",
+      "id": "variantbookshelves:ru_gray_painted_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_cobalt_bookshelf",
+      "id": "variantbookshelves:ru_willow_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_kapok_bookshelf",
+      "id": "variantbookshelves:ru_cypress_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_magnolia_bookshelf",
+      "id": "variantbookshelves:ru_mauve_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_cherry_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_dead_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_pine_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_yellow_bioshroom_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_blackwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_palm_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_joshua_bookshelf",
       "required": false
     },
     {
@@ -260,7 +322,47 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_yellow_bioshroom_bookshelf",
+      "id": "variantbookshelves:ru_magnolia_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_kapok_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_sculkwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_blue_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_brimwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_black_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_purple_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_cobalt_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_baobab_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_light_blue_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_green_painted_bookshelf",
       "required": false
     },
     {

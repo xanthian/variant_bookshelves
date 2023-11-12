@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "eldritch_end:block/primordial_planks",
+    "east": "variantbookshelves:block/ee_primordial_bookshelf",
+    "north": "variantbookshelves:block/ee_primordial_bookshelf",
+    "particle": "variantbookshelves:block/ee_primordial_bookshelf",
+    "south": "variantbookshelves:block/ee_primordial_bookshelf",
+    "up": "eldritch_end:block/primordial_planks",
+    "west": "variantbookshelves:block/ee_primordial_bookshelf"
+  }
+}

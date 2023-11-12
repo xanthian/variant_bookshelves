@@ -52,8 +52,16 @@ public class ModCreativeTab {
                                 entries.add(block);
                             }
                         }
+                        if (FabricLoader.getInstance().isModLoaded("blockus")) {
+                            for (Block block : Blockus.BLS_BOOKSHELVES.values()) {
+                                entries.add(block);
+                            }
+                        }
                         if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
                             entries.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF);
+                        }
+                        if (FabricLoader.getInstance().isModLoaded("eldritch_end")) {
+                            entries.add(EldritchEnd.EE_PRIMORDIAL_BOOKSHELF);
                         }
                         if (FabricLoader.getInstance().isModLoaded("minecells")) {
                             entries.add(MineCells.MC_PUTRID_BOOKSHELF);

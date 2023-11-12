@@ -4,6 +4,18 @@
     "variantbookshelves:crimson_bookshelf",
     "variantbookshelves:warped_bookshelf",
     {
+      "id": "variantcraftingtables:bls_herringbone_charred_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantcraftingtables:bls_herringbone_crimson_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantcraftingtables:bls_herringbone_warped_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:prom_dark_amaranth_bookshelf",
       "required": false
     },
