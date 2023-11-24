@@ -68,10 +68,10 @@ public class RecipeGenerator extends FabricRecipeProvider {
         offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("bewitchment")), Bewitchment.BW_JUNIPER_BOOKSHELF, Registries.ITEM.get(new Identifier("bewitchment:juniper_planks")));
 
         // Biome Makeover
-        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_ANCIENT_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:ancient_oak_planks")));
-        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_BLIGHTED_BALSA_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:blighted_balsa_planks")));
-        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_SWAMP_CYPRESS_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:swamp_cypress_planks")));
-        offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_WILLOW_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:willow_planks")));
+        //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_ANCIENT_OAK_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:ancient_oak_planks")));
+        //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_BLIGHTED_BALSA_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:blighted_balsa_planks")));
+        //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_SWAMP_CYPRESS_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:swamp_cypress_planks")));
+        //offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("biomemakeover")), BiomeMakeover.BM_WILLOW_BOOKSHELF, Registries.ITEM.get(new Identifier("biomemakeover:willow_planks")));
 
         // Blockus
         offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.allModsLoaded("blockus")), Blockus.BLS_CHARRED_BOOKSHELF, Registries.ITEM.get(new Identifier("blockus:charred_planks")));
