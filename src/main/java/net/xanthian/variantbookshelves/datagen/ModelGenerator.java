@@ -4,10 +4,11 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.client.*;
-
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TextureMap;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 import net.xanthian.variantbookshelves.util.ModTextureMap;
@@ -20,6 +21,27 @@ import java.util.function.Function;
 public class ModelGenerator extends FabricModelProvider {
     public ModelGenerator(FabricDataOutput output) {
         super(output);
+    }
+
+    // Used for those mods that cant follow a standard _planks naming convention or those that don't load via gradle.
+    public static void registerNonStandardCube(BlockStateModelGenerator blockStateModelGenerator, Block block, String string, BiFunction<Block, String, TextureMap> texturesFactory) {
+        TextureMap textureMap = texturesFactory.apply(block, string);
+        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(block, Models.CUBE.upload(block, textureMap, blockStateModelGenerator.modelCollector)));
+    }
+
+    // Allows to loop through the blocks in each class and extract the block name without using registry
+    public static void registerModel(BlockStateModelGenerator blockStateModelGenerator, Map<Identifier, Block> blockMap, String modId, Function<String, String> modelPathGenerator) {
+        for (Block bookshelf : blockMap.values()) {
+            String blockName = bookshelf.getTranslationKey();
+            int firstUnderscoreIndex = blockName.indexOf('_');
+            if (firstUnderscoreIndex != -1) {
+                String plankName = blockName.substring(firstUnderscoreIndex + 1, blockName.lastIndexOf("_bookshelf"));
+                String modelPath = modId + ":block/" + modelPathGenerator.apply(plankName);
+                registerNonStandardCube(blockStateModelGenerator, bookshelf, modelPath, ModTextureMap::bookshelf);
+            } else {
+                System.out.println("Invalid block name format: " + blockName);
+            }
+        }
     }
 
     @Override
@@ -39,6 +61,7 @@ public class ModelGenerator extends FabricModelProvider {
         registerModel(blockStateModelGenerator, BeachParty.LDBP_BOOKSHELVES, "beachparty", plankName -> plankName + "_planks0");
         registerModel(blockStateModelGenerator, BetterArcheology.BA_BOOKSHELVES, "betterarcheology", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, Bewitchment.BW_BOOKSHELVES, "bewitchment", plankName -> plankName + "_planks");
+        registerModel(blockStateModelGenerator, BiomeMakeover.BM_BOOKSHELVES, "biomemakeover", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, Blockus.BLS_BOOKSHELVES, "blockus", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, EldritchEnd.EE_BOOKSHELVES, "eldritch_end", plankName -> plankName + "_planks");
@@ -53,26 +76,5 @@ public class ModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-    }
-
-    // Used for those mods that cant follow a standard _planks naming convention or those that don't load via gradle.
-    public static void registerNonStandardCube(BlockStateModelGenerator blockStateModelGenerator, Block block, String string, BiFunction<Block, String, TextureMap> texturesFactory) {
-        TextureMap textureMap = texturesFactory.apply(block, string);
-        blockStateModelGenerator.blockStateCollector.accept(BlockStateModelGenerator.createSingletonBlockState(block, Models.CUBE.upload(block, textureMap, blockStateModelGenerator.modelCollector)));
-    }
-
-    // Allows to loop through the blocks in each class and extract the block name without using registry
-    public static void registerModel(BlockStateModelGenerator blockStateModelGenerator, Map<Identifier, Block> blockMap, String modId, Function<String, String> modelPathGenerator) {
-        for (Block bookshelf : blockMap.values()) {
-            String blockName = bookshelf.getTranslationKey();
-            int firstUnderscoreIndex = blockName.indexOf('_');
-            if (firstUnderscoreIndex != -1) {
-                String plankName = blockName.substring(firstUnderscoreIndex + 1, blockName.lastIndexOf("_bookshelf"));
-                String modelPath = modId + ":block/" + modelPathGenerator.apply(plankName);
-                registerNonStandardCube(blockStateModelGenerator,bookshelf, modelPath, ModTextureMap::bookshelf);
-            } else {
-                System.out.println("Invalid block name format: " + blockName);
-            }
-        }
     }
 }

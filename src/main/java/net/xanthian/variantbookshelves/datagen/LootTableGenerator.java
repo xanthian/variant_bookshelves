@@ -28,6 +28,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         registerLootTables(BeachParty.LDBP_BOOKSHELVES, "beachparty");
         registerLootTables(BetterArcheology.BA_BOOKSHELVES, "betterarcheology");
         registerLootTables(Bewitchment.BW_BOOKSHELVES, "bewitchment");
+        registerLootTables(BiomeMakeover.BM_BOOKSHELVES, "biomemakeover");
         registerLootTables(Blockus.BLS_BOOKSHELVES, "blockus");
         registerLootTables(DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker");
         registerLootTables(EldritchEnd.EE_BOOKSHELVES, "eldritch_end");
@@ -38,14 +39,6 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         registerLootTables(SnifferPlus.SP_BOOKSHELVES, "snifferplus");
         registerLootTables(TechReborn.TR_BOOKSHELVES, "techreborn");
         registerLootTables(Vinery.LDV_BOOKSHELVES, "vinery");
-
-
-        //addDrop(bookshelf, (Block block) -> this.addConditions(drops(block, Items.BOOK, ConstantLootNumberProvider.create(3.0f)), List.of(DefaultResourceConditions.allModsLoaded("ad_astra"))));
-
-
-        // Beach Party (Lets Do)
-        //addDrop(BeachParty.LDBP_PALM_BOOKSHELF, addConditions(drops(BeachParty.LDBP_PALM_BOOKSHELF, Items.BOOK, ConstantLootNumberProvider.create(3.0f)),List.of(DefaultResourceConditions.allModsLoaded("beachparty"))));
-
 
     }
 

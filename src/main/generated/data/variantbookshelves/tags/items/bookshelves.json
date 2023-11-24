@@ -78,6 +78,22 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:bm_willow_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bm_ancient_oak_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bm_swamp_cypress_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bm_blighted_balsa_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:bls_charred_bookshelf",
       "required": false
     },

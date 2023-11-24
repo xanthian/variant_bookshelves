@@ -2,10 +2,8 @@ package net.xanthian.variantbookshelves.util;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.Block;
-
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 
@@ -46,6 +44,27 @@ public class ModRegistries {
             for (Block block : Bewitchment.BW_BOOKSHELVES.values()) {
                 registry.add(block, 30, 20);
             }
+        }
+        if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
+            for (Block block : BiomeMakeover.BM_BOOKSHELVES.values()) {
+                registry.add(block, 30, 20);
+            }
+        }
+        if (FabricLoader.getInstance().isModLoaded("blockus")) {
+            registry.add(Blockus.BLS_HERRINGBONE_ACACIA_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_BAMBOO_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_BIRCH_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_CHARRED_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_CHERRY_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_DARK_OAK_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_JUNGLE_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_MANGROVE_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_OAK_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_RAW_BAMBOO_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_SPRUCE_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_HERRINGBONE_WHITE_OAK_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_RAW_BAMBOO_BOOKSHELF, 30, 20);
+            registry.add(Blockus.BLS_WHITE_OAK_BOOKSHELF, 30, 20);
         }
         if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
             registry.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF, 30, 20);
@@ -139,6 +158,11 @@ public class ModRegistries {
         }
         if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
             for (Block block : Bewitchment.BW_BOOKSHELVES.values()) {
+                registry.add(block, 300);
+            }
+        }
+        if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
+            for (Block block : BiomeMakeover.BM_BOOKSHELVES.values()) {
                 registry.add(block, 300);
             }
         }

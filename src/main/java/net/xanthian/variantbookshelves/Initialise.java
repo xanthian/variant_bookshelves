@@ -49,6 +49,8 @@ public class Initialise implements ModInitializer {
 
         ifModLoaded("bewitchment", Bewitchment::registerBookshelves);
 
+        ifModLoaded("biomemakeover", BiomeMakeover::registerBookshelves);
+
         ifModLoaded("blockus", Blockus::registerBookshelves);
 
         ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
@@ -79,11 +81,12 @@ public class Initialise implements ModInitializer {
         ModRegistries.registerFuelandFlammable();
         ModCreativeTab.registerItemGroup();
 
-        // Datagen Block - disable for client run
+        //Datagen Block - disable for client run
         //SnifferPlus.registerBookshelves();
         //RegionsUnexplored.register04Bookshelves();
         //NaturesSpirit.registerBookshelves();
         //DeeperAndDarker.registerBookshelves();
+        //BiomeMakeover.registerBookshelves();
         //AdAstra.registerBookshelves();
 
     }

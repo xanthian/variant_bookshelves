@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "biomemakeover:block/swamp_cypress_planks",
+    "east": "variantbookshelves:block/bm_swamp_cypress_bookshelf",
+    "north": "variantbookshelves:block/bm_swamp_cypress_bookshelf",
+    "particle": "variantbookshelves:block/bm_swamp_cypress_bookshelf",
+    "south": "variantbookshelves:block/bm_swamp_cypress_bookshelf",
+    "up": "biomemakeover:block/swamp_cypress_planks",
+    "west": "variantbookshelves:block/bm_swamp_cypress_bookshelf"
+  }
+}

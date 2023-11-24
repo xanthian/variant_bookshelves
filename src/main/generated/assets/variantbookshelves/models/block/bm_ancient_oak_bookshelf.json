@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "biomemakeover:block/ancient_oak_planks",
+    "east": "variantbookshelves:block/bm_ancient_oak_bookshelf",
+    "north": "variantbookshelves:block/bm_ancient_oak_bookshelf",
+    "particle": "variantbookshelves:block/bm_ancient_oak_bookshelf",
+    "south": "variantbookshelves:block/bm_ancient_oak_bookshelf",
+    "up": "biomemakeover:block/ancient_oak_planks",
+    "west": "variantbookshelves:block/bm_ancient_oak_bookshelf"
+  }
+}

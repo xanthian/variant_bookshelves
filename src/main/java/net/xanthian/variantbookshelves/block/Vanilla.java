@@ -2,9 +2,7 @@ package net.xanthian.variantbookshelves.block;
 
 import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
@@ -14,14 +12,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.variantbookshelves.Initialise;
 
 import java.util.Map;
 
 public class Vanilla {
-
-    public static Map<Identifier, Block> VANILLA_BOOKSHELVES = Maps.newHashMap();
 
     public static final Block ACACIA_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     public static final Block BAMBOO_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
@@ -33,6 +28,7 @@ public class Vanilla {
     public static final Block MANGROVE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     public static final Block SPRUCE_BOOKSHELF = new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF));
     public static final Block WARPED_BOOKSHELF = new Block(FabricBlockSettings.create().mapColor(MapColor.DARK_AQUA).instrument(Instrument.BASS).strength(1.5f).sounds(BlockSoundGroup.WOOD));
+    public static Map<Identifier, Block> VANILLA_BOOKSHELVES = Maps.newHashMap();
 
     public static void registerBookshelves() {
         registerBookshelfBlock("acacia_bookshelf", ACACIA_BOOKSHELF);
@@ -48,7 +44,7 @@ public class Vanilla {
     }
 
     private static void registerBookshelfBlock(String name, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name.toLowerCase());
+        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
         Registry.register(Registries.BLOCK, identifier, block);
         Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
         VANILLA_BOOKSHELVES.put(identifier, block);

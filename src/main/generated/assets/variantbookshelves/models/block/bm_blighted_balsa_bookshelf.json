@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "biomemakeover:block/blighted_balsa_planks",
+    "east": "variantbookshelves:block/bm_blighted_balsa_bookshelf",
+    "north": "variantbookshelves:block/bm_blighted_balsa_bookshelf",
+    "particle": "variantbookshelves:block/bm_blighted_balsa_bookshelf",
+    "south": "variantbookshelves:block/bm_blighted_balsa_bookshelf",
+    "up": "biomemakeover:block/blighted_balsa_planks",
+    "west": "variantbookshelves:block/bm_blighted_balsa_bookshelf"
+  }
+}

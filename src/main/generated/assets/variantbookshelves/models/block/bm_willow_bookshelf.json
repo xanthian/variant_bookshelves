@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "biomemakeover:block/willow_planks",
+    "east": "variantbookshelves:block/bm_willow_bookshelf",
+    "north": "variantbookshelves:block/bm_willow_bookshelf",
+    "particle": "variantbookshelves:block/bm_willow_bookshelf",
+    "south": "variantbookshelves:block/bm_willow_bookshelf",
+    "up": "biomemakeover:block/willow_planks",
+    "west": "variantbookshelves:block/bm_willow_bookshelf"
+  }
+}

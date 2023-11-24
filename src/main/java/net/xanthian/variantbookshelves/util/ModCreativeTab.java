@@ -47,8 +47,13 @@ public class ModCreativeTab {
                         if (FabricLoader.getInstance().isModLoaded("betterarcheology")) {
                             entries.add(BetterArcheology.BA_ROTTEN_BOOKSHELF);
                         }
-                        if (FabricLoader.getInstance().isModLoaded("bewitchment")){
+                        if (FabricLoader.getInstance().isModLoaded("bewitchment")) {
                             for (Block block : Bewitchment.BW_BOOKSHELVES.values()) {
+                                entries.add(block);
+                            }
+                        }
+                        if (FabricLoader.getInstance().isModLoaded("biomemakeover")) {
+                            for (Block block : BiomeMakeover.BM_BOOKSHELVES.values()) {
                                 entries.add(block);
                             }
                         }
@@ -110,8 +115,7 @@ public class ModCreativeTab {
                             if (isModVersion("regions_unexplored", "0.4")) {
                                 entries.add(RegionsUnexplored.RU_CHERRY_BOOKSHELF);
                                 entries.add(RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF);
-                            }
-                            else {
+                            } else {
                                 entries.add(RegionsUnexplored.RU_BRIMWOOD_BOOKSHELF);
                                 entries.add(RegionsUnexplored.RU_COBALT_BOOKSHELF);
                                 entries.add(RegionsUnexplored.RU_KAPOK_BOOKSHELF);
@@ -131,7 +135,7 @@ public class ModCreativeTab {
                         }
 
                     })
-            .build());
+                    .build());
 
     public static void registerItemGroup() {
     }

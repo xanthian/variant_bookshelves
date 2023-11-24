@@ -2,16 +2,21 @@
   "schemaVersion": 1,
   "id": "variantbookshelves",
   "version": "${version}",
-
   "name": "Variant Bookshelves",
   "description": "Bookshelves for all wood types",
-  "authors": [ "Xanthian"],
+  "authors": [
+    "Xanthian"
+  ],
   "license": "MIT",
   "icon": "assets/icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.variantbookshelves.Initialise"],
-    "fabric-datagen": ["net.xanthian.variantbookshelves.DataGenerator"]
+    "main": [
+      "net.xanthian.variantbookshelves.Initialise"
+    ],
+    "fabric-datagen": [
+      "net.xanthian.variantbookshelves.DataGenerator"
+    ]
   },
   "depends": {
     "fabricloader": ">=0.14.20",
