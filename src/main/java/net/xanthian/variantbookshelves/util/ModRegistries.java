@@ -94,7 +94,7 @@ public class ModRegistries {
             registry.add(Promenade.PROM_SAKURA_BOOKSHELF, 30, 20);
         }
         if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
-            registry.add(RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF, 30, 20);
+            registry.add(RegionsUnexplored.RU_ALPHA_BOOKSHELF, 30, 20);
             registry.add(RegionsUnexplored.RU_BAOBAB_BOOKSHELF, 30, 20);
             registry.add(RegionsUnexplored.RU_BLACK_PAINTED_BOOKSHELF, 30, 20);
             registry.add(RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF, 30, 20);
@@ -228,7 +228,7 @@ public class ModRegistries {
             registry.add(Promenade.PROM_SAKURA_BOOKSHELF, 300);
         }
         if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
-            registry.add(RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF, 300);
+            registry.add(RegionsUnexplored.RU_ALPHA_BOOKSHELF, 300);
             registry.add(RegionsUnexplored.RU_BAOBAB_BOOKSHELF, 300);
             registry.add(RegionsUnexplored.RU_BLACK_PAINTED_BOOKSHELF, 300);
             registry.add(RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF, 300);

@@ -17,7 +17,7 @@ public class RegionsUnexplored {
 
     public static Map<Identifier, Block> RU_BOOKSHELVES = Maps.newHashMap();
 
-    public static Block RU_ALPHA_OAK_BOOKSHELF;
+    public static Block RU_ALPHA_BOOKSHELF;
     public static Block RU_BAOBAB_BOOKSHELF;
     public static Block RU_BLACK_PAINTED_BOOKSHELF;
     public static Block RU_BLACKWOOD_BOOKSHELF;
@@ -62,7 +62,7 @@ public class RegionsUnexplored {
     public static Block RU_YELLOW_BIOSHROOM_BOOKSHELF;
 
     public static void registerBookshelves() {
-        RU_ALPHA_OAK_BOOKSHELF = registerBookshelf("ru_alpha_oak_bookshelf");
+        RU_ALPHA_BOOKSHELF = registerBookshelf("ru_alpha_bookshelf");
         RU_BAOBAB_BOOKSHELF = registerBookshelf("ru_baobab_bookshelf");
         RU_BLACK_PAINTED_BOOKSHELF = registerBookshelf("ru_black_painted_bookshelf");
         RU_BLACKWOOD_BOOKSHELF = registerBookshelf("ru_blackwood_bookshelf");

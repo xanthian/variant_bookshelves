@@ -58,7 +58,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         registerBookshelfRecipe(exporter, Bewitchment.BW_BOOKSHELVES, "bewitchment");
         registerBookshelfRecipe(exporter, BiomeMakeover.BM_BOOKSHELVES, "biomemakeover");
         registerBookshelfRecipe(exporter, Blockus.BLS_BOOKSHELVES, "blockus");
-        //registerBookshelfRecipe(exporter, Botania.BOT_BOOKSHELVES, "botania");
+        registerBookshelfRecipe(exporter, Botania.BOT_BOOKSHELVES, "botania");
         registerBookshelfRecipe(exporter, Cinderscapes.CS_BOOKSHELVES, "cinderscapes");
         registerBookshelfRecipe(exporter, DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker");
         registerBookshelfRecipe(exporter, Desolation.DS_BOOKSHELVES, "desolation");
@@ -67,7 +67,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
         registerBookshelfRecipe(exporter, NaturesSpirit.NS_BOOKSHELVES, "natures_spirit");
         registerBookshelfRecipe(exporter, Promenade.PROM_BOOKSHELVES, "promenade");
         registerBookshelfRecipe(exporter, RegionsUnexplored.RU_BOOKSHELVES, "regions_unexplored");
-        //registerBookshelfRecipe(exporter, SnifferPlus.SP_BOOKSHELVES, "snifferplus");
+        registerBookshelfRecipe(exporter, SnifferPlus.SP_BOOKSHELVES, "snifferplus");
         registerBookshelfRecipe(exporter, TechReborn.TR_BOOKSHELVES, "techreborn");
         registerBookshelfRecipe(exporter, Vinery.LDV_BOOKSHELVES, "vinery");
 

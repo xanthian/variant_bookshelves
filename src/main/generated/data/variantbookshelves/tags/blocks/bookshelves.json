@@ -294,6 +294,10 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:ru_alpha_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:ru_pink_bioshroom_bookshelf",
       "required": false
     },
@@ -327,10 +331,6 @@
     },
     {
       "id": "variantbookshelves:ru_blue_bioshroom_bookshelf",
-      "required": false
-    },
-    {
-      "id": "variantbookshelves:ru_alpha_oak_bookshelf",
       "required": false
     },
     {

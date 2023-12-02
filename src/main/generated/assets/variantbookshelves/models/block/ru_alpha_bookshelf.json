@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "regions_unexplored:block/alpha_planks",
+    "east": "variantbookshelves:block/ru_alpha_bookshelf",
+    "north": "variantbookshelves:block/ru_alpha_bookshelf",
+    "particle": "variantbookshelves:block/ru_alpha_bookshelf",
+    "south": "variantbookshelves:block/ru_alpha_bookshelf",
+    "up": "regions_unexplored:block/alpha_planks",
+    "west": "variantbookshelves:block/ru_alpha_bookshelf"
+  }
+}
