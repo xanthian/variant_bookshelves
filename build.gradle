@@ -10,9 +10,9 @@ archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
 
-def apikeyPropertiesFile = rootProject.file("secrets/secrets.properties");
+//def apikeyPropertiesFile = rootProject.file("secrets/secrets.properties");
 def apikeyProperties = new Properties()
-apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+//apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
 repositories {
 	mavenCentral()
 	maven { url "https://maven.terraformersmc.com/" } // Required for Mod Menu and Terraform APIs
@@ -32,13 +32,7 @@ repositories {
 	maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
 	maven { url "https://maven.parchmentmc.org" }
 	maven { url "https://jitpack.io" }
-	maven {
-		url = uri("https://maven.pkg.github.com/Lemonszz/taniwha")
-		credentials {
-			username = apikeyProperties['gpr.user'] ?: System.getenv("USERNAME")
-			password = apikeyProperties['gpr.key'] ?: System.getenv("TOKEN")
-		}
-	}
+	//maven {url = uri("https://maven.pkg.github.com/Lemonszz/taniwha")	credentials {username = apikeyProperties['gpr.user'] ?: System.getenv("USERNAME")			password = apikeyProperties['gpr.key'] ?: System.getenv("TOKEN")		}}
 }
 
 loom {
