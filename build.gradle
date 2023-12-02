@@ -105,7 +105,7 @@ dependencies {
 
 	// BiomeMakeover
 	modRuntimeOnly("maven.modrinth:jG8Q2YwT:rsoZ2Iqo") { transitive false }
-	modRuntimeOnly( "party.lemons:taniwha-fabric:1.20.0-5.4.9" )
+	//modRuntimeOnly( "party.lemons:taniwha-fabric:1.20.0-5.4.9" )
 
 	// Blockus
 	modRuntimeOnly("curse.maven:blockus-312289:4745041") { transitive false }
