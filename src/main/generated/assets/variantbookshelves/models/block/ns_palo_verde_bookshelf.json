@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/palo_verde_planks",
+    "east": "variantbookshelves:block/ns_palo_verde_bookshelf",
+    "north": "variantbookshelves:block/ns_palo_verde_bookshelf",
+    "particle": "variantbookshelves:block/ns_palo_verde_bookshelf",
+    "south": "variantbookshelves:block/ns_palo_verde_bookshelf",
+    "up": "natures_spirit:block/palo_verde_planks",
+    "west": "variantbookshelves:block/ns_palo_verde_bookshelf"
+  }
+}

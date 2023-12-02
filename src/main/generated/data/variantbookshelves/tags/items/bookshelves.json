@@ -162,7 +162,31 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:bot_shimmerwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bot_dreamwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bot_livingwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:cs_scorched_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:cs_umbral_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:dad_echo_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ds_charred_bookshelf",
       "required": false
     },
     {
@@ -174,10 +198,6 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ns_olive_bookshelf",
-      "required": false
-    },
-    {
       "id": "variantbookshelves:ns_sugi_bookshelf",
       "required": false
     },
@@ -186,15 +206,35 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ns_willow_bookshelf",
-      "required": false
-    },
-    {
       "id": "variantbookshelves:ns_maple_bookshelf",
       "required": false
     },
     {
+      "id": "variantbookshelves:ns_palo_verde_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:ns_aspen_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_larch_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_ghaf_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_olive_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_willow_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_coconut_bookshelf",
       "required": false
     },
     {
@@ -207,6 +247,10 @@
     },
     {
       "id": "variantbookshelves:ns_wisteria_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ns_cedar_bookshelf",
       "required": false
     },
     {
@@ -250,6 +294,10 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:ru_pink_bioshroom_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:ru_lime_painted_bookshelf",
       "required": false
     },
@@ -278,6 +326,10 @@
       "required": false
     },
     {
+      "id": "variantbookshelves:ru_blue_bioshroom_bookshelf",
+      "required": false
+    },
+    {
       "id": "variantbookshelves:ru_alpha_oak_bookshelf",
       "required": false
     },
@@ -287,6 +339,10 @@
     },
     {
       "id": "variantbookshelves:ru_yellow_painted_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_green_bioshroom_bookshelf",
       "required": false
     },
     {
@@ -342,11 +398,11 @@
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_kapok_bookshelf",
+      "id": "variantbookshelves:ru_sculkwood_bookshelf",
       "required": false
     },
     {
-      "id": "variantbookshelves:ru_sculkwood_bookshelf",
+      "id": "variantbookshelves:ru_kapok_bookshelf",
       "required": false
     },
     {

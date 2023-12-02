@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cinderscapes:block/scorched_planks",
+    "east": "variantbookshelves:block/cs_scorched_bookshelf",
+    "north": "variantbookshelves:block/cs_scorched_bookshelf",
+    "particle": "variantbookshelves:block/cs_scorched_bookshelf",
+    "south": "variantbookshelves:block/cs_scorched_bookshelf",
+    "up": "cinderscapes:block/scorched_planks",
+    "west": "variantbookshelves:block/cs_scorched_bookshelf"
+  }
+}

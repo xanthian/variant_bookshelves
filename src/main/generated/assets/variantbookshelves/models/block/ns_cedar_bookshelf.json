@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/cedar_planks",
+    "east": "variantbookshelves:block/ns_cedar_bookshelf",
+    "north": "variantbookshelves:block/ns_cedar_bookshelf",
+    "particle": "variantbookshelves:block/ns_cedar_bookshelf",
+    "south": "variantbookshelves:block/ns_cedar_bookshelf",
+    "up": "natures_spirit:block/cedar_planks",
+    "west": "variantbookshelves:block/ns_cedar_bookshelf"
+  }
+}

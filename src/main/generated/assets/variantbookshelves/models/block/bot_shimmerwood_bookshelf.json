@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "botania:block/shimmerwood_planks",
+    "east": "variantbookshelves:block/bot_shimmerwood_bookshelf",
+    "north": "variantbookshelves:block/bot_shimmerwood_bookshelf",
+    "particle": "variantbookshelves:block/bot_shimmerwood_bookshelf",
+    "south": "variantbookshelves:block/bot_shimmerwood_bookshelf",
+    "up": "botania:block/shimmerwood_planks",
+    "west": "variantbookshelves:block/bot_shimmerwood_bookshelf"
+  }
+}

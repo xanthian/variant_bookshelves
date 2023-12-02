@@ -63,7 +63,10 @@ public class ModelGenerator extends FabricModelProvider {
         registerModel(blockStateModelGenerator, Bewitchment.BW_BOOKSHELVES, "bewitchment", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, BiomeMakeover.BM_BOOKSHELVES, "biomemakeover", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, Blockus.BLS_BOOKSHELVES, "blockus", plankName -> plankName + "_planks");
+        registerModel(blockStateModelGenerator, Botania.BOT_BOOKSHELVES, "botania", plankName -> plankName + "_planks");
+        registerModel(blockStateModelGenerator, Cinderscapes.CS_BOOKSHELVES, "cinderscapes", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker", plankName -> plankName + "_planks");
+        registerModel(blockStateModelGenerator, Desolation.DS_BOOKSHELVES, "desolation", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, EldritchEnd.EE_BOOKSHELVES, "eldritch_end", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, MineCells.MC_BOOKSHELVES, "minecells", plankName -> plankName + "_planks");
         registerModel(blockStateModelGenerator, NaturesSpirit.NS_BOOKSHELVES, "natures_spirit", plankName -> plankName + "_planks");

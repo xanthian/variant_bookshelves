@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "desolation:block/charred_planks",
+    "east": "variantbookshelves:block/ds_charred_bookshelf",
+    "north": "variantbookshelves:block/ds_charred_bookshelf",
+    "particle": "variantbookshelves:block/ds_charred_bookshelf",
+    "south": "variantbookshelves:block/ds_charred_bookshelf",
+    "up": "desolation:block/charred_planks",
+    "west": "variantbookshelves:block/ds_charred_bookshelf"
+  }
+}

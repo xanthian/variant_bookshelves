@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "natures_spirit:block/ghaf_planks",
+    "east": "variantbookshelves:block/ns_ghaf_bookshelf",
+    "north": "variantbookshelves:block/ns_ghaf_bookshelf",
+    "particle": "variantbookshelves:block/ns_ghaf_bookshelf",
+    "south": "variantbookshelves:block/ns_ghaf_bookshelf",
+    "up": "natures_spirit:block/ghaf_planks",
+    "west": "variantbookshelves:block/ns_ghaf_bookshelf"
+  }
+}

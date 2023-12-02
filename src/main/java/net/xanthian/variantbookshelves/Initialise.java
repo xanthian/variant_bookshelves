@@ -4,9 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
-import net.fabricmc.loader.api.ModContainer;
-import net.fabricmc.loader.api.Version;
-import net.fabricmc.loader.api.metadata.ModMetadata;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
@@ -21,16 +18,6 @@ public class Initialise implements ModInitializer {
         if (FabricLoader.getInstance().isModLoaded(modId)) {
             runnable.run();
         }
-    }
-
-    public static boolean isModVersion(String modId, String ver) {
-        return FabricLoader.getInstance()
-                .getModContainer(modId)
-                .map(ModContainer::getMetadata)
-                .map(ModMetadata::getVersion)
-                .map(Version::getFriendlyString)
-                .filter(version -> version.startsWith(ver))
-                .isPresent();
     }
 
     @Override
@@ -53,7 +40,13 @@ public class Initialise implements ModInitializer {
 
         ifModLoaded("blockus", Blockus::registerBookshelves);
 
+        ifModLoaded("botania", Botania::registerBookshelves);
+
+        ifModLoaded("cinderscapes", Cinderscapes::registerBookshelves);
+
         ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
+
+        ifModLoaded("desolation", Desolation::registerBookshelves);
 
         ifModLoaded("eldritch_end", EldritchEnd::registerBookshelves);
 
@@ -63,14 +56,7 @@ public class Initialise implements ModInitializer {
 
         ifModLoaded("promenade", Promenade::registerBookshelves);
 
-        ifModLoaded("regions_unexplored", () -> {
-            RegionsUnexplored.registerBookshelves();
-            if (isModVersion("regions_unexplored", "0.4")) {
-                RegionsUnexplored.register04Bookshelves();
-            } else {
-                RegionsUnexplored.register05Bookshelves();
-            }
-        });
+        ifModLoaded("regions_unexplored", RegionsUnexplored::registerBookshelves);
 
         ifModLoaded("snifferplus", SnifferPlus::registerBookshelves);
 
@@ -82,12 +68,7 @@ public class Initialise implements ModInitializer {
         ModCreativeTab.registerItemGroup();
 
         //Datagen Block - disable for client run
+        //Botania.registerBookshelves();
         //SnifferPlus.registerBookshelves();
-        //RegionsUnexplored.register04Bookshelves();
-        //NaturesSpirit.registerBookshelves();
-        //DeeperAndDarker.registerBookshelves();
-        //BiomeMakeover.registerBookshelves();
-        //AdAstra.registerBookshelves();
-
     }
 }

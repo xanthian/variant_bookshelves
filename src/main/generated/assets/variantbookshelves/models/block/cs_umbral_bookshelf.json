@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "cinderscapes:block/umbral_planks",
+    "east": "variantbookshelves:block/cs_umbral_bookshelf",
+    "north": "variantbookshelves:block/cs_umbral_bookshelf",
+    "particle": "variantbookshelves:block/cs_umbral_bookshelf",
+    "south": "variantbookshelves:block/cs_umbral_bookshelf",
+    "up": "cinderscapes:block/umbral_planks",
+    "west": "variantbookshelves:block/cs_umbral_bookshelf"
+  }
+}

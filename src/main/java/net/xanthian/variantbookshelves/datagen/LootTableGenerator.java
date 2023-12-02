@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
 import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
@@ -30,12 +32,15 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
         registerLootTables(Bewitchment.BW_BOOKSHELVES, "bewitchment");
         registerLootTables(BiomeMakeover.BM_BOOKSHELVES, "biomemakeover");
         registerLootTables(Blockus.BLS_BOOKSHELVES, "blockus");
+        registerLootTables(Botania.BOT_BOOKSHELVES, "botania");
+        registerLootTables(Cinderscapes.CS_BOOKSHELVES, "cinderscapes");
         registerLootTables(DeeperAndDarker.DAD_BOOKSHELVES, "deeperdarker");
+        registerLootTables(Desolation.DS_BOOKSHELVES, "desolation");
         registerLootTables(EldritchEnd.EE_BOOKSHELVES, "eldritch_end");
         registerLootTables(MineCells.MC_BOOKSHELVES, "minecells");
-        registerLootTables(NaturesSpirit.NS_BOOKSHELVES, "natures_spirit");
+        registerSpecialLootTable(NaturesSpirit.NS_BOOKSHELVES, "natures_spirit");
         registerLootTables(Promenade.PROM_BOOKSHELVES, "promenade");
-        registerLootTables(RegionsUnexplored.RU_BOOKSHELVES, "regions_unexplored");
+        registerSpecialLootTable(RegionsUnexplored.RU_BOOKSHELVES, "regions_unexplored");
         registerLootTables(SnifferPlus.SP_BOOKSHELVES, "snifferplus");
         registerLootTables(TechReborn.TR_BOOKSHELVES, "techreborn");
         registerLootTables(Vinery.LDV_BOOKSHELVES, "vinery");
@@ -45,6 +50,26 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
     private void registerLootTables(Map<Identifier, Block> blockMap, String modId) {
         for (Block bookshelf : blockMap.values()) {
             withConditions(DefaultResourceConditions.allModsLoaded(modId)).addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
+        }
+    }
+
+    public void registerSpecialLootTable(Map<Identifier, Block> bookshelfs, String modId) {
+        for (Map.Entry<Identifier, Block> entry : bookshelfs.entrySet()) {
+            Identifier bookshelfId = entry.getKey();
+            Block bookshelf = entry.getValue();
+            String path = bookshelfId.getPath();
+            int firstUnderscoreIndex = path.indexOf('_');
+            int lastUnderscoreIndex = path.lastIndexOf('_');
+            if (firstUnderscoreIndex != -1 && lastUnderscoreIndex != -1 && lastUnderscoreIndex > firstUnderscoreIndex) {
+                String plankName = path.substring(firstUnderscoreIndex + 1, lastUnderscoreIndex);
+                String plankPath = modId + ":" + plankName + "_planks";
+                withConditions(DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId),
+                        DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath)))))
+                        .addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
+
+            } else {
+                System.out.println("Invalid block name format: " + path);
+            }
         }
     }
 }

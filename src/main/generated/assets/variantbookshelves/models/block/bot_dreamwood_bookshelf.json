@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "botania:block/dreamwood_planks",
+    "east": "variantbookshelves:block/bot_dreamwood_bookshelf",
+    "north": "variantbookshelves:block/bot_dreamwood_bookshelf",
+    "particle": "variantbookshelves:block/bot_dreamwood_bookshelf",
+    "south": "variantbookshelves:block/bot_dreamwood_bookshelf",
+    "up": "botania:block/dreamwood_planks",
+    "west": "variantbookshelves:block/bot_dreamwood_bookshelf"
+  }
+}

@@ -34,7 +34,10 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
         registerTags(Bewitchment.BW_BOOKSHELVES);
         registerTags(BiomeMakeover.BM_BOOKSHELVES);
         registerTags(Blockus.BLS_BOOKSHELVES);
+        registerTags(Botania.BOT_BOOKSHELVES);
+        registerTags(Cinderscapes.CS_BOOKSHELVES);
         registerTags(DeeperAndDarker.DAD_BOOKSHELVES);
+        registerTags(Desolation.DS_BOOKSHELVES);
         registerTags(EldritchEnd.EE_BOOKSHELVES);
         registerTags(MineCells.MC_BOOKSHELVES);
         registerTags(NaturesSpirit.NS_BOOKSHELVES);

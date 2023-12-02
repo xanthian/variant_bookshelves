@@ -28,6 +28,12 @@ public class NaturesSpirit {
     public static Block NS_WILLOW_BOOKSHELF;
     public static Block NS_WISTERIA_BOOKSHELF;
 
+    public static Block NS_CEDAR_BOOKSHELF;
+    public static Block NS_COCONUT_BOOKSHELF;
+    public static Block NS_GHAF_BOOKSHELF;
+    public static Block NS_LARCH_BOOKSHELF;
+    public static Block NS_PALO_VERDE_BOOKSHELF;
+
     public static void registerBookshelves() {
         NS_ASPEN_BOOKSHELF = registerBookshelf("ns_aspen_bookshelf");
         NS_CYPRESS_BOOKSHELF = registerBookshelf("ns_cypress_bookshelf");
@@ -39,6 +45,12 @@ public class NaturesSpirit {
         NS_SUGI_BOOKSHELF = registerBookshelf("ns_sugi_bookshelf");
         NS_WILLOW_BOOKSHELF = registerBookshelf("ns_willow_bookshelf");
         NS_WISTERIA_BOOKSHELF = registerBookshelf("ns_wisteria_bookshelf");
+
+        NS_CEDAR_BOOKSHELF = registerBookshelf("ns_cedar_bookshelf");
+        NS_COCONUT_BOOKSHELF = registerBookshelf("ns_coconut_bookshelf");
+        NS_GHAF_BOOKSHELF = registerBookshelf("ns_ghaf_bookshelf");
+        NS_LARCH_BOOKSHELF = registerBookshelf("ns_larch_bookshelf");
+        NS_PALO_VERDE_BOOKSHELF = registerBookshelf("ns_palo_verde_bookshelf");
     }
 
     private static Block register(String name, Block block) {

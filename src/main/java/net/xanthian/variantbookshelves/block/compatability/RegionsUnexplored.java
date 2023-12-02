@@ -51,10 +51,13 @@ public class RegionsUnexplored {
     public static Block RU_CHERRY_BOOKSHELF;
     public static Block RU_SCULKWOOD_BOOKSHELF;
 
+    public static Block RU_BLUE_BIOSHROOM_BOOKSHELF;
     public static Block RU_BRIMWOOD_BOOKSHELF;
     public static Block RU_COBALT_BOOKSHELF;
+    public static Block RU_GREEN_BIOSHROOM_BOOKSHELF;
     public static Block RU_KAPOK_BOOKSHELF;
     public static Block RU_MAGNOLIA_BOOKSHELF;
+    public static Block RU_PINK_BIOSHROOM_BOOKSHELF;
     public static Block RU_SOCOTRA_BOOKSHELF;
     public static Block RU_YELLOW_BIOSHROOM_BOOKSHELF;
 
@@ -89,20 +92,20 @@ public class RegionsUnexplored {
         RU_WHITE_PAINTED_BOOKSHELF = registerBookshelf("ru_white_painted_bookshelf");
         RU_WILLOW_BOOKSHELF = registerBookshelf("ru_willow_bookshelf");
         RU_YELLOW_PAINTED_BOOKSHELF = registerBookshelf("ru_yellow_painted_bookshelf");
-    }
 
-    public static void register04Bookshelves() {
         RU_CHERRY_BOOKSHELF = registerBookshelf("ru_cherry_bookshelf");
         RU_SCULKWOOD_BOOKSHELF = registerBookshelf("ru_sculkwood_bookshelf");
-    }
 
-    public static void register05Bookshelves() {
+        RU_BLUE_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_blue_bioshroom_bookshelf");
         RU_BRIMWOOD_BOOKSHELF = registerBookshelf("ru_brimwood_bookshelf");
         RU_COBALT_BOOKSHELF = registerBookshelf("ru_cobalt_bookshelf");
+        RU_GREEN_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_green_bioshroom_bookshelf");
         RU_KAPOK_BOOKSHELF = registerBookshelf("ru_kapok_bookshelf");
         RU_MAGNOLIA_BOOKSHELF = registerBookshelf("ru_magnolia_bookshelf");
+        RU_PINK_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_pink_bioshroom_bookshelf");
         RU_SOCOTRA_BOOKSHELF = registerBookshelf("ru_socotra_bookshelf");
         RU_YELLOW_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_yellow_bioshroom_bookshelf");
+
     }
 
     public static Block register(String name, Block block) {

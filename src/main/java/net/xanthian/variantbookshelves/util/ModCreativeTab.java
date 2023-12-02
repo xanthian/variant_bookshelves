@@ -14,8 +14,6 @@ import net.xanthian.variantbookshelves.Initialise;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 
-import static net.xanthian.variantbookshelves.Initialise.isModVersion;
-
 public class ModCreativeTab {
 
     public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -62,8 +60,22 @@ public class ModCreativeTab {
                                 entries.add(block);
                             }
                         }
+                        if (FabricLoader.getInstance().isModLoaded("botania")) {
+                            for (Block block : Botania.BOT_BOOKSHELVES.values()) {
+                                entries.add(block);
+                            }
+                        }
+                        if (FabricLoader.getInstance().isModLoaded("cinderscapes")) {
+                            for (Block block : Cinderscapes.CS_BOOKSHELVES.values()) {
+                                entries.add(block);
+                            }
+                        }
                         if (FabricLoader.getInstance().isModLoaded("deeperdarker")) {
                             entries.add(DeeperAndDarker.DAD_ECHO_BOOKSHELF);
+                        }
+
+                        if (FabricLoader.getInstance().isModLoaded("desolation")) {
+                            entries.add(Desolation.DS_CHARRED_BOOKSHELF);
                         }
                         if (FabricLoader.getInstance().isModLoaded("eldritch_end")) {
                             entries.add(EldritchEnd.EE_PRIMORDIAL_BOOKSHELF);
@@ -82,46 +94,8 @@ public class ModCreativeTab {
                             }
                         }
                         if (FabricLoader.getInstance().isModLoaded("regions_unexplored")) {
-                            entries.add(RegionsUnexplored.RU_ALPHA_OAK_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_BAOBAB_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_BLACK_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_BLACKWOOD_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_BLUE_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_BROWN_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_CYAN_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_CYPRESS_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_DEAD_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_EUCALYPTUS_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_GRAY_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_GREEN_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_JOSHUA_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_LARCH_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_LIGHT_BLUE_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_LIGHT_GRAY_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_LIME_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_MAGENTA_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_MAPLE_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_MAUVE_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_ORANGE_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_PALM_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_PINE_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_PINK_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_PURPLE_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_REDWOOD_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_RED_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_WHITE_PAINTED_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_WILLOW_BOOKSHELF);
-                            entries.add(RegionsUnexplored.RU_YELLOW_PAINTED_BOOKSHELF);
-                            if (isModVersion("regions_unexplored", "0.4")) {
-                                entries.add(RegionsUnexplored.RU_CHERRY_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_SCULKWOOD_BOOKSHELF);
-                            } else {
-                                entries.add(RegionsUnexplored.RU_BRIMWOOD_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_COBALT_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_KAPOK_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_MAGNOLIA_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_SOCOTRA_BOOKSHELF);
-                                entries.add(RegionsUnexplored.RU_YELLOW_BIOSHROOM_BOOKSHELF);
+                            for (Block block : RegionsUnexplored.RU_BOOKSHELVES.values()) {
+                                entries.add(block);
                             }
                         }
                         if (FabricLoader.getInstance().isModLoaded("snifferplus")) {
@@ -133,9 +107,8 @@ public class ModCreativeTab {
                         if (FabricLoader.getInstance().isModLoaded("vinery")) {
                             entries.add(Vinery.LDV_CHERRY_BOOKSHELF);
                         }
-
                     })
-                    .build());
+                    .texture("variantbookshelves.png").noRenderedName().build());
 
     public static void registerItemGroup() {
     }
