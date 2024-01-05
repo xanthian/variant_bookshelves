@@ -100,7 +100,9 @@ public class RecipeGenerator extends FabricRecipeProvider {
             if (firstUnderscoreIndex != -1 && lastUnderscoreIndex != -1 && lastUnderscoreIndex > firstUnderscoreIndex) {
                 String plankName = path.substring(firstUnderscoreIndex + 1, lastUnderscoreIndex);
                 String plankPath = modId + ":" + plankName + plankSuffix;
-                offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId), DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath))))), bookshelf, Registries.ITEM.get(new Identifier(plankPath)));
+                offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId),
+                        DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath))))),
+                        bookshelf, Registries.ITEM.get(new Identifier(plankPath)));
             } else {
                 System.out.println("Invalid block name format: " + path);
             }
