@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -16,7 +15,6 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
@@ -77,13 +75,6 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_bookshelf", InventoryChangedCriterion.Conditions.items(Items.BOOKSHELF))
                 .offerTo(exporter, new Identifier("variantbookshelves", "bookshelf"));
 
-        // Lectern recipe
-        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, Blocks.LECTERN)
-                .input('S', ItemTags.WOODEN_SLABS)
-                .input('B', ModItemTags.BOOKSHELVES)
-                .pattern("SSS").pattern(" B ").pattern(" S ")
-                .criterion("has_book", VanillaRecipeProvider.conditionsFromItem(Items.BOOK))
-                .offerTo(exporter);
     }
 
     public void registerBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> bookshelves, String modId) {
@@ -101,7 +92,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
                 String plankName = path.substring(firstUnderscoreIndex + 1, lastUnderscoreIndex);
                 String plankPath = modId + ":" + plankName + plankSuffix;
                 offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId),
-                        DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath))))),
+                                DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath))))),
                         bookshelf, Registries.ITEM.get(new Identifier(plankPath)));
             } else {
                 System.out.println("Invalid block name format: " + path);
