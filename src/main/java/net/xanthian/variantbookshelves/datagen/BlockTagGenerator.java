@@ -16,8 +16,8 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
-    public static final TagKey<Block> BOOKSHELVES = TagKey.of(Registries.BLOCK.getKey(), new Identifier(Initialise.MOD_ID, "bookshelves"));
-    private static final TagKey<Block> C_BOOKSHELVES = TagKey.of(Registries.BLOCK.getKey(), new Identifier("c:bookshelves"));
+    public static final TagKey<Block> BOOKSHELVES = TagKey.of(Registries.BLOCK.getKey(), Identifier.of(Initialise.MOD_ID, "bookshelves"));
+    private static final TagKey<Block> C_BOOKSHELVES = TagKey.of(Registries.BLOCK.getKey(), Identifier.of("c:bookshelves"));
 
     public BlockTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -60,9 +60,9 @@ public class BlockTagGenerator extends FabricTagProvider.BlockTagProvider {
 
     private void registerTags(Map<Identifier, Block> blockMap) {
         for (Block block : blockMap.values()) {
-            Identifier lootTableId = block.getLootTableId();
+            Identifier lootTableId = block.getLootTableKey().getValue();
             String newPath = lootTableId.getPath().replaceFirst("blocks/", "");
-            Identifier modifiedId = new Identifier(lootTableId.getNamespace(), newPath);
+            Identifier modifiedId = Identifier.of(lootTableId.getNamespace(), newPath);
 
             getOrCreateTagBuilder(BOOKSHELVES)
                     .addOptional(modifiedId);

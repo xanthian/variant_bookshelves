@@ -2,21 +2,23 @@ package net.xanthian.variantbookshelves.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
+import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
 import net.minecraft.block.Block;
 import net.minecraft.item.Items;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 
 public class LootTableGenerator extends FabricBlockLootTableProvider {
-    public LootTableGenerator(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    public LootTableGenerator(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
@@ -49,7 +51,7 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
 
     private void registerLootTables(Map<Identifier, Block> blockMap, String modId) {
         for (Block bookshelf : blockMap.values()) {
-            withConditions(DefaultResourceConditions.allModsLoaded(modId)).addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
+            withConditions(ResourceConditions.allModsLoaded(modId)).addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
         }
     }
 
@@ -63,8 +65,8 @@ public class LootTableGenerator extends FabricBlockLootTableProvider {
             if (firstUnderscoreIndex != -1 && lastUnderscoreIndex != -1 && lastUnderscoreIndex > firstUnderscoreIndex) {
                 String plankName = path.substring(firstUnderscoreIndex + 1, lastUnderscoreIndex);
                 String plankPath = modId + ":" + plankName + "_planks";
-                withConditions(DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId),
-                        DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath)))))
+                withConditions(ResourceConditions.and(ResourceConditions.allModsLoaded(modId),
+                        ResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(plankPath)))))
                         .addDrop(bookshelf, drops(bookshelf, Items.BOOK, ConstantLootNumberProvider.create(3.0f)));
 
             } else {

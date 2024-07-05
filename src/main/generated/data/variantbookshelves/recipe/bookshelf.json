@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "variantbookshelves:bookshelves"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bookshelf"
+  }
+}

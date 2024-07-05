@@ -14,6 +14,6 @@ public class ModItemTags {
     }
 
     private static TagKey<Item> register() {
-        return TagKey.of(RegistryKeys.ITEM, new Identifier(Initialise.MOD_ID, "bookshelves"));
+        return TagKey.of(RegistryKeys.ITEM, Identifier.of(Initialise.MOD_ID, "bookshelves"));
     }
 }

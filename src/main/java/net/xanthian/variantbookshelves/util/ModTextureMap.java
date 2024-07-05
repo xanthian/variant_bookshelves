@@ -22,8 +22,8 @@ public class ModTextureMap extends TextureMap {
     public static TextureMap bookshelf(Block neswBlock, String updownBlock) {
         return (new ModTextureMap())
                 .put(TextureKey.PARTICLE, getId(neswBlock))
-                .put(TextureKey.DOWN, new Identifier(updownBlock))
-                .put(TextureKey.UP, new Identifier(updownBlock))
+                .put(TextureKey.DOWN, Identifier.of(updownBlock))
+                .put(TextureKey.UP, Identifier.of(updownBlock))
                 .put(TextureKey.NORTH, getId(neswBlock))
                 .put(TextureKey.SOUTH, getId(neswBlock))
                 .put(TextureKey.EAST, getId(neswBlock))

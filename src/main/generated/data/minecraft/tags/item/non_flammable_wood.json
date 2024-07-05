@@ -1,0 +1,42 @@
+{
+  "values": [
+    "variantbookshelves:crimson_bookshelf",
+    "variantbookshelves:warped_bookshelf",
+    {
+      "id": "variantbookshelves:bls_charred_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_charred_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_crimson_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:bls_herringbone_warped_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:prom_dark_amaranth_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_brimwood_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_cobalt_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_dead_bookshelf",
+      "required": false
+    },
+    {
+      "id": "variantbookshelves:ru_yellow_bioshroom_bookshelf",
+      "required": false
+    }
+  ]
+}

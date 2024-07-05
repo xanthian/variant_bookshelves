@@ -1,8 +1,8 @@
 package net.xanthian.variantbookshelves.block.compatability;
 
 import com.google.common.collect.Maps;
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.item.Item;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
@@ -48,9 +48,6 @@ public class RegionsUnexplored {
     public static Block RU_WILLOW_BOOKSHELF;
     public static Block RU_YELLOW_PAINTED_BOOKSHELF;
 
-    public static Block RU_CHERRY_BOOKSHELF;
-    public static Block RU_SCULKWOOD_BOOKSHELF;
-
     public static Block RU_BLUE_BIOSHROOM_BOOKSHELF;
     public static Block RU_BRIMWOOD_BOOKSHELF;
     public static Block RU_COBALT_BOOKSHELF;
@@ -93,9 +90,6 @@ public class RegionsUnexplored {
         RU_WILLOW_BOOKSHELF = registerBookshelf("ru_willow_bookshelf");
         RU_YELLOW_PAINTED_BOOKSHELF = registerBookshelf("ru_yellow_painted_bookshelf");
 
-        RU_CHERRY_BOOKSHELF = registerBookshelf("ru_cherry_bookshelf");
-        RU_SCULKWOOD_BOOKSHELF = registerBookshelf("ru_sculkwood_bookshelf");
-
         RU_BLUE_BIOSHROOM_BOOKSHELF = registerBookshelf("ru_blue_bioshroom_bookshelf");
         RU_BRIMWOOD_BOOKSHELF = registerBookshelf("ru_brimwood_bookshelf");
         RU_COBALT_BOOKSHELF = registerBookshelf("ru_cobalt_bookshelf");
@@ -109,14 +103,14 @@ public class RegionsUnexplored {
     }
 
     public static Block register(String name, Block block) {
-        Identifier identifier = new Identifier(Initialise.MOD_ID, name);
+        Identifier identifier = Identifier.of(Initialise.MOD_ID, name);
         Registry.register(Registries.BLOCK, identifier, block);
         RU_BOOKSHELVES.put(identifier, block);
-        Registry.register(Registries.ITEM, identifier, new BlockItem(block, new FabricItemSettings()));
+        Registry.register(Registries.ITEM, identifier, new BlockItem(block, new Item.Settings()));
         return block;
     }
 
     public static Block registerBookshelf(String name) {
-        return register(name, new Block(FabricBlockSettings.copy(Blocks.BOOKSHELF)));
+        return register(name, new Block(AbstractBlock.Settings.copy(Blocks.BOOKSHELF)));
     }
 }

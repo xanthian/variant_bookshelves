@@ -18,7 +18,7 @@ import java.util.concurrent.CompletableFuture;
 import static net.xanthian.variantbookshelves.util.ModItemTags.BOOKSHELVES;
 
 public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
-    private static final TagKey<Item> C_BOOKSHELVES = TagKey.of(Registries.ITEM.getKey(), new Identifier("c:bookshelves"));
+    private static final TagKey<Item> C_BOOKSHELVES = TagKey.of(Registries.ITEM.getKey(), Identifier.of("c:bookshelves"));
 
     public ItemTagGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -51,15 +51,15 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.NON_FLAMMABLE_WOOD)
                 .add(Vanilla.CRIMSON_BOOKSHELF.asItem())
                 .add(Vanilla.WARPED_BOOKSHELF.asItem())
-                .addOptional(new Identifier("variantbookshelves:bls_charred_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:bls_herringbone_charred_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:bls_herringbone_crimson_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:bls_herringbone_warped_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:prom_dark_amaranth_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:ru_brimwood_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:ru_cobalt_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:ru_dead_bookshelf"))
-                .addOptional(new Identifier("variantbookshelves:ru_yellow_bioshroom_bookshelf"));
+                .addOptional(Identifier.of("variantbookshelves:bls_charred_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:bls_herringbone_charred_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:bls_herringbone_crimson_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:bls_herringbone_warped_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:prom_dark_amaranth_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:ru_brimwood_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:ru_cobalt_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:ru_dead_bookshelf"))
+                .addOptional(Identifier.of("variantbookshelves:ru_yellow_bioshroom_bookshelf"));
 
         getOrCreateTagBuilder(C_BOOKSHELVES)
                 .forceAddTag(BOOKSHELVES);
@@ -68,9 +68,9 @@ public class ItemTagGenerator extends FabricTagProvider.ItemTagProvider {
 
     private void registerTags(Map<Identifier, Block> blockMap) {
         for (Block block : blockMap.values()) {
-            Identifier lootTableId = block.getLootTableId();
+            Identifier lootTableId = block.getLootTableKey().getValue();
             String newPath = lootTableId.getPath().replaceFirst("blocks/", "");
-            Identifier modifiedId = new Identifier(lootTableId.getNamespace(), newPath);
+            Identifier modifiedId = Identifier.of(lootTableId.getNamespace(), newPath);
 
             getOrCreateTagBuilder(BOOKSHELVES)
                     .addOptional(modifiedId);

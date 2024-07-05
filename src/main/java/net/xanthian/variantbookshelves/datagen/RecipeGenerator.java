@@ -2,10 +2,10 @@ package net.xanthian.variantbookshelves.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
+import net.fabricmc.fabric.api.resource.conditions.v1.ResourceConditions;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.block.Block;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.VanillaRecipeProvider;
@@ -15,20 +15,21 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
 import net.xanthian.variantbookshelves.block.Vanilla;
 import net.xanthian.variantbookshelves.block.compatability.*;
 import net.xanthian.variantbookshelves.util.ModItemTags;
 
 import java.util.Map;
-import java.util.function.Consumer;
+import java.util.concurrent.CompletableFuture;
 
 public class RecipeGenerator extends FabricRecipeProvider {
-    public RecipeGenerator(FabricDataOutput output) {
-        super(output);
+    public RecipeGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
-    public static void offerBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible bookshelf, ItemConvertible planks) {
+    public static void offerBookshelfRecipe(RecipeExporter exporter, ItemConvertible bookshelf, ItemConvertible planks) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, bookshelf)
                 .input('#', planks)
                 .input('X', Items.BOOK)
@@ -37,7 +38,7 @@ public class RecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
         offerBookshelfRecipe(exporter, Vanilla.ACACIA_BOOKSHELF, Items.ACACIA_PLANKS);
         offerBookshelfRecipe(exporter, Vanilla.BAMBOO_BOOKSHELF, Items.BAMBOO_PLANKS);
@@ -73,15 +74,15 @@ public class RecipeGenerator extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.BOOKSHELF, 1)
                 .input(ModItemTags.BOOKSHELVES)
                 .criterion("has_bookshelf", InventoryChangedCriterion.Conditions.items(Items.BOOKSHELF))
-                .offerTo(exporter, new Identifier("variantbookshelves", "bookshelf"));
+                .offerTo(exporter, Identifier.of("variantbookshelves", "bookshelf"));
 
     }
 
-    public void registerBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> bookshelves, String modId) {
+    public void registerBookshelfRecipe(RecipeExporter exporter, Map<Identifier, Block> bookshelves, String modId) {
         registerBookshelfRecipe(exporter, bookshelves, modId, "_planks");
     }
 
-    public void registerBookshelfRecipe(Consumer<RecipeJsonProvider> exporter, Map<Identifier, Block> bookshelves, String modId, String plankSuffix) {
+    public void registerBookshelfRecipe(RecipeExporter exporter, Map<Identifier, Block> bookshelves, String modId, String plankSuffix) {
         for (Map.Entry<Identifier, Block> entry : bookshelves.entrySet()) {
             Identifier bookshelfId = entry.getKey();
             Block bookshelf = entry.getValue();
@@ -91,9 +92,9 @@ public class RecipeGenerator extends FabricRecipeProvider {
             if (firstUnderscoreIndex != -1 && lastUnderscoreIndex != -1 && lastUnderscoreIndex > firstUnderscoreIndex) {
                 String plankName = path.substring(firstUnderscoreIndex + 1, lastUnderscoreIndex);
                 String plankPath = modId + ":" + plankName + plankSuffix;
-                offerBookshelfRecipe(withConditions(exporter, DefaultResourceConditions.and(DefaultResourceConditions.allModsLoaded(modId),
-                                DefaultResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, new Identifier(plankPath))))),
-                        bookshelf, Registries.ITEM.get(new Identifier(plankPath)));
+                offerBookshelfRecipe(withConditions(exporter, ResourceConditions.and(ResourceConditions.allModsLoaded(modId),
+                                ResourceConditions.registryContains(RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(plankPath))))),
+                        bookshelf, Registries.ITEM.get(Identifier.of(plankPath)));
             } else {
                 System.out.println("Invalid block name format: " + path);
             }

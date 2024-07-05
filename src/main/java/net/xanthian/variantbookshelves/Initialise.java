@@ -23,46 +23,29 @@ public class Initialise implements ModInitializer {
     @Override
     public void onInitialize() {
 
-        ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(Initialise.MOD_ID, "3d_bookshelves"),
+        ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(Initialise.MOD_ID, "3d_bookshelves"),
                 FabricLoader.getInstance().getModContainer(Initialise.MOD_ID).orElseThrow(), ResourcePackActivationType.NORMAL);
 
         Vanilla.registerBookshelves();
 
-        ifModLoaded("ad_astra", AdAstra::registerBookshelves);
-
-        ifModLoaded("beachparty", BeachParty::registerBookshelves);
-
-        ifModLoaded("betterarcheology", BetterArcheology::registerBookshelves);
-
-        ifModLoaded("bewitchment", Bewitchment::registerBookshelves);
-
-        ifModLoaded("biomemakeover", BiomeMakeover::registerBookshelves);
-
+        //ifModLoaded("ad_astra", AdAstra::registerBookshelves);
+        //ifModLoaded("beachparty", BeachParty::registerBookshelves);
+        //ifModLoaded("betterarcheology", BetterArcheology::registerBookshelves);
+        //ifModLoaded("bewitchment", Bewitchment::registerBookshelves);
+        //ifModLoaded("biomemakeover", BiomeMakeover::registerBookshelves);
         ifModLoaded("blockus", Blockus::registerBookshelves);
-
-        ifModLoaded("botania", Botania::registerBookshelves);
-
+        //ifModLoaded("botania", Botania::registerBookshelves);
         ifModLoaded("cinderscapes", Cinderscapes::registerBookshelves);
-
-        ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
-
-        ifModLoaded("desolation", Desolation::registerBookshelves);
-
-        ifModLoaded("eldritch_end", EldritchEnd::registerBookshelves);
-
-        ifModLoaded("minecells", MineCells::registerBookshelves);
-
+        //ifModLoaded("deeperdarker", DeeperAndDarker::registerBookshelves);
+        //ifModLoaded("desolation", Desolation::registerBookshelves);
+        //ifModLoaded("eldritch_end", EldritchEnd::registerBookshelves);
+        //ifModLoaded("minecells", MineCells::registerBookshelves);
         ifModLoaded("natures_spirit", NaturesSpirit::registerBookshelves);
-
-        ifModLoaded("promenade", Promenade::registerBookshelves);
-
-        ifModLoaded("regions_unexplored", RegionsUnexplored::registerBookshelves);
-
-        ifModLoaded("snifferplus", SnifferPlus::registerBookshelves);
-
+        //ifModLoaded("promenade", Promenade::registerBookshelves);
+        //ifModLoaded("regions_unexplored", RegionsUnexplored::registerBookshelves);
+        //ifModLoaded("snifferplus", SnifferPlus::registerBookshelves);
         ifModLoaded("techreborn", TechReborn::registerBookshelves);
-
-        ifModLoaded("vinery", Vinery::registerBookshelves);
+        //ifModLoaded("vinery", Vinery::registerBookshelves);
 
         ModRegistries.registerFuelandFlammable();
         ModCreativeTab.registerItemGroup();
